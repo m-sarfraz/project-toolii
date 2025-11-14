@@ -748,10 +748,12 @@ button {
       rgba(255, 255, 255, 0.9)
     ),
     linear-gradient(312.95deg, #ffe8f8 0%, #fff4fe 100.11%);
-  max-width: 770px;
+  max-width: 680px;
   width: 100%;
   padding: 1.25rem 47px 1.25rem 3rem;
   border-radius: 1em;
+  margin-left: 8em;
+  margin-top: 3em;
 }
 
 .signUp-title {
@@ -783,10 +785,11 @@ button {
 .signUp-input-row {
   display: flex;
   gap: 0.75rem;
-  flex-wrap: wrap;
   margin-top: 0.75rem;
 }
-
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .signUp-input-row.signUp-optional-row {
   gap: 0.75rem;
 }
@@ -801,7 +804,6 @@ button {
 
 .signUp-input-wrapper.signUp-flex-1 {
   flex: 1;
-  min-width: 0;
   width: auto;
 }
 

@@ -109,9 +109,9 @@ $(document).ready(function () {
     // ==========================
     // Create Account Link
     // ==========================
-    $('.create-account-link').on('click', function () {
-        alert('Create account clicked - redirect to sign up page');
-    });
+    // $('.create-account-link').on('click', function () {
+    //     alert('Create account clicked - redirect to sign up page');
+    // });
 
 
     // ==========================
