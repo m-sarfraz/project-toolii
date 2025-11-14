@@ -23,7 +23,7 @@ $(document).ready(function () {
     // ==========================
     // Robot Checkbox
     // ==========================
-    let robotChecked = false;
+    let robotChecked = true;
 
     const $robotCheckbox = $('#robotCheckbox');
     const $robotCheckboxCheck = $robotCheckbox.find('.checkbox-check');
@@ -37,7 +37,7 @@ $(document).ready(function () {
         if (robotChecked) {
             $robotCheckboxCheck.css('display', 'flex');
         } else {
-            $robotCheckboxCheck.css('display', 'none');
+            $robotCheckboxCheck.css('display', 'flex');
         }
     }
 
