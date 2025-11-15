@@ -41,51 +41,8 @@ $(document).ready(function () {
         }
     }
 
-    // ==========================
-    // Form Submission
-    // ==========================
-    const $signinForm = $('#signinForm');
-    const $signinButton = $('#signinButton');
 
-    // Handle both button click and form submit
-    $signinButton.on('click', function (e) {
-        e.preventDefault();
-        handleSignIn();
-    });
 
-    $signinForm.on('submit', function (e) {
-        e.preventDefault();
-        handleSignIn();
-    });
-
-    function handleSignIn() {
-        const email = $('#email').val();
-        const password = $('#password').val();
-
-        // Basic field validation
-        if (!email || !password) {
-            alert('Please fill in all fields');
-            return;
-        }
-
-        if (!isValidEmail(email)) {
-            alert('Please enter a valid email address');
-            return;
-        }
-
-        if (!robotChecked) {
-            alert('Please verify that you are not a robot');
-            return;
-        }
-
-        // Simulate sign-in process
-        $signinButton.text('Signing In...').prop('disabled', true);
-
-        setTimeout(function () {
-            alert('Sign in successful!');
-            $signinButton.text('Sign In').prop('disabled', false);
-        }, 2000);
-    }
 
     function isValidEmail(email) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -136,4 +93,100 @@ $(document).ready(function () {
     // ==========================
     updateRememberCheckbox();
     updateRobotCheckbox();
+
+
+    // check empty inputs oin form submit 
+    // ==========================
+    // Form Submission
+    // ==========================
+    const $signupForm = $('#signupForm');
+    const $signUpButton = $("#signUpButton")
+
+    $signupForm.on('submit', function (e) {
+        e.preventDefault();
+        handleSignUp(e);
+    });
+
+    $signUpButton.on('click', function (e) {
+        e.preventDefault();
+        handleSignUp(e);
+    });
+    const handleSignUp = (e) => {
+        e.preventDefault(); // stop page reload
+
+        let hasError = false;
+        // Simulate sign-in process
+        $signUpButton.text('Signing Up...').prop('disabled', true);
+
+        setTimeout(function () {
+            $signUpButton.text('Sign Up').prop('disabled', false);
+        }, 2000);
+        // Clear old errors
+        $(".signUp-error-message").text("");
+
+        $(this).find("input").each(function () {
+            let value = $(this).val().trim();
+            let errorSpan = $(this).parent().siblings(".signUp-error-message");
+            console.log(errorSpan);
+
+            if (value === "") {
+                hasError = true;
+                let fieldName = $(this).attr("placeholder") || $(this).attr("name");
+                errorSpan.text(fieldName + " is required");
+            }
+        });
+
+        if (!hasError) {
+            console.log("Form valid, submit now.");
+        }
+    }
+
+
+
+
+
+    const $signInForm = $('#signinForm');
+    const $signInButton = $("#signinButton");
+
+    $signInForm.on('submit', function (e) {
+        console.log('1');
+
+        e.preventDefault();
+        handleSignIn(e);
+    });
+
+    $signInButton.on('click', function (e) {
+        console.log('2');
+        e.preventDefault();
+        handleSignIn(e);
+    });
+    const handleSignIn = (e) => {
+        e.preventDefault(); // stop page reload
+        let hasError = false;
+        // Simulate sign-in process
+        $signInButton.text('Signing In...').prop('disabled', true);
+        setTimeout(function () {
+            $signInButton.text('Sign In').prop('disabled', false);
+        }, 2000);
+        // Clear old errors
+        $(".signIn-error-message").text("");
+        $(this).find("input").each(function () {
+            console.log('111111');
+            
+            let value = $(this).val().trim();
+let errorSpan = $(this).closest('.input-field').next(".signIn-error-message");
+
+            if (value === "") {
+                hasError = true;
+                let fieldName = $(this).attr("placeholder") || $(this).attr("name");
+                console.log(fieldName);
+                errorSpan.text(fieldName + " is required");
+            }
+        });
+
+        if (!hasError) {
+            console.log("Form valid, submit now.");
+        }
+    }
+
 });
