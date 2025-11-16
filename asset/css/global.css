@@ -85,6 +85,7 @@ button {
   width: 100%;
   padding: 10px;
   height: 80px;
+  background-color: #fff;
 }
 .logo-section {
   display: flex;
@@ -554,8 +555,7 @@ button {
 
 .illustration-image {
   position: relative;
-       filter: drop-shadow(-180px 0 60px #bfa3f5);
-
+  filter: drop-shadow(-180px 0 60px #bfa3f5);
 }
 
 /* Bottom Blur */
@@ -1018,13 +1018,13 @@ button {
     padding: 1.25rem;
     margin: 0;
   }
-.sign-up-wrapper-main{
-  flex-direction: column-reverse;
-}
+  .sign-up-wrapper-main {
+    flex-direction: column-reverse;
+  }
   .signUp-input-wrapper {
     width: 100%;
   }
-  .signUp-container{
+  .signUp-container {
     padding: 0;
   }
 
@@ -1036,16 +1036,14 @@ button {
     font-size: 24px;
     min-height: 64px;
   }
-  .signUp-input-row{
+  .signUp-input-row {
     flex-wrap: wrap;
-
+  }
+  .main-content {
+    gap: 50px;
+  }
 }
-.main-content{
-  gap: 50px;
-}
-
-}
-.signup-illustration{
+.signup-illustration {
   width: 400px;
   height: 400px;
 }

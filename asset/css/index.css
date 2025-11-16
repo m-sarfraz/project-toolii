@@ -7,6 +7,19 @@
 .mascot_wrapper img {
   max-height: 100%;
 }
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.get_started_btn:hover {
+  background: linear-gradient(180deg, #6f5df5 0%, #4c39c9 100%);
+  box-shadow: 0px 3px 8px rgba(10, 13, 18, 0.18);
+}
+
+.learn_more_btn:hover {
+  background: rgba(10, 13, 18, 0.03);
+}
 
 .get_started_btn {
   box-sizing: border-box;
@@ -16,7 +29,7 @@
   align-items: center;
   padding: 13.4095px 18.4381px;
   gap: 6.7px;
-
+  text-decoration: none;
   width: 125.23px;
   height: 50.82px;
 
@@ -30,7 +43,7 @@
 }
 .learn_more_btn {
   box-sizing: border-box;
-
+  text-decoration: none;
   /* Auto layout */
   outline: none;
   border: none;
