@@ -1,0 +1,144 @@
+.custom_container {
+  width: 100%;
+}
+.mascot_wrapper {
+  /* height: 550px; */
+}
+.mascot_wrapper img {
+  max-height: 100%;
+}
+
+.get_started_btn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13.4095px 18.4381px;
+  gap: 6.7px;
+
+  width: 125.23px;
+  height: 50.82px;
+
+  background: linear-gradient(180deg, #8371f7 0%, #5d48d6 100%);
+  box-shadow: 0px 0.838095px 1.67619px rgba(10, 13, 18, 0.05),
+    inset 0px 0px 0px 0.838095px rgba(10, 13, 18, 0.18),
+    inset 0px -1.67619px 0px rgba(10, 13, 18, 0.05);
+  border-radius: 8.47784px;
+  outline: none;
+  border: none;
+}
+.learn_more_btn {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13.4095px 18.4381px;
+  gap: 6.7px;
+  width: 123.23px;
+  height: 50.82px;
+
+  box-shadow: inset 0px 0px 0px 0.838095px rgba(10, 13, 18, 0.18),
+    inset 0px -1.67619px 0px rgba(10, 13, 18, 0.05);
+  filter: drop-shadow(0px 0.838095px 1.67619px rgba(10, 13, 18, 0.05));
+  border-radius: 8.47784px;
+}
+.heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 67.0476px;
+  line-height: 81px;
+  color: #535862;
+}
+.description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.1143px;
+  line-height: 24px;
+  color: #535862;
+}
+.right__info {
+  gap: 3em;
+  width: 50%;
+  margin-right: auto;
+}
+.partener_wrapper {
+  flex-wrap: wrap;
+}
+
+.main_content_wrapper {
+  gap: 120px;
+  height: calc(100vh - 80px);
+}
+@media (max-width: 1190px) {
+  .heading {
+    font-size: 50px;
+    line-height: 1.5;
+  }
+  .main_content_wrapper {
+    gap: 2em;
+  }
+}
+@media (max-width: 1024px) {
+  .heading {
+    line-height: 1.5;
+    font-size: 40px;
+  }
+  .main_content_wrapper {
+    flex-wrap: nowrap;
+  }
+  .partener_wrapper {
+    flex-wrap: wrap;
+  }
+  .custom_container {
+    width: 100%;
+    padding: 47px 10px;
+    margin: 40px 10px;
+  }
+  .mascot_wrapper img {
+    width: 400px;
+    height: 600px;
+  }
+  .main_content_wrapper {
+    gap: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .right__info {
+    padding: 20px;
+    width: 100%;
+  }
+  .mascot_wrapper img {
+    width: 100%;
+  }
+  .heading {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 67.0476px;
+    line-height: normal;
+    color: #535862;
+    font-size: 30px;
+  }
+  .main_content_wrapper {
+    gap: 60px;
+    margin-top: 20px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .partener_wrapper {
+    justify-content: center;
+  }
+  .main_content_wrapper {
+    flex-wrap: wrap;
+  }
+}
