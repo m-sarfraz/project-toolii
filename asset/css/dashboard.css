@@ -57,7 +57,7 @@ body {
 }
 
 /* Main Content */
-.main-content {
+.main-content-dashboard {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -199,6 +199,7 @@ body {
     min-height: 146px;
     min-width: 15rem;
     width: 294px;
+    height: -webkit-fill-available;
 }
 
 .chart-content {
@@ -207,6 +208,7 @@ body {
     padding: 0.75rem 0 0.125rem;
     max-width: 100%;
     width: 193px;
+    margin: auto;
 }
 
 .chart-icon {
@@ -237,7 +239,7 @@ body {
     width: 100%;
     border-radius: 0.75rem;
     border: 1px solid #e5e7eb;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 16px rgba(215, 207, 243, 1)
 }
 
 .overview-header {
@@ -365,6 +367,7 @@ body {
     gap: 1rem;
     margin: auto 0;
     width: 200px;
+    margin: auto;
 }
 
 .pie-chart-image {
@@ -450,7 +453,7 @@ body {
     font-weight: 600;
     border-radius: 0.75rem;
     border: 1px solid #e5e7eb;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 16px rgba(215, 207, 243, 1);
     min-height: 434px;
 }
 
@@ -554,6 +557,7 @@ body {
     color: #4b5563;
     border-radius: 0.5rem;
     border: 1px solid #e5e7eb;
+    margin-left: auto;
 }
 
 .table-column {
@@ -692,6 +696,7 @@ body {
     border: 1px solid #e5e7eb;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     min-height: 400px;
+    box-shadow: 0px 4px 16px rgba(215, 207, 243, 1)
 }
 
 .live-feed-header {
@@ -834,8 +839,8 @@ body {
     line-height: 1;
     border-radius: 0.75rem;
     border: 1px solid #e5e7eb;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     min-height: 75px;
+    box-shadow: 0px 4px 16px rgba(215, 207, 243, 1)
 }
 
 .action-btn {
@@ -899,6 +904,7 @@ body {
     border: 1px solid #e5e7eb;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     min-height: 344px;
+    box-shadow: 0px 4px 16px rgba(215, 207, 243, 1)
 }
 
 .users-header {
@@ -984,16 +990,23 @@ body {
         padding: 0 1.25rem;
     }
 
-    .main-content {
-        padding: 0 1.25rem;
+    .main-content-dashboard {
+        padding: 10px;
+    }
+
+    .chart-card {
+        width: 100%;
     }
 
     .main-panel {
         padding: 1.25rem;
     }
 
-    .welcome-text {
-        font-size: 2.25rem;
+    .welcome-text,
+    .overview-title,
+    .error-logs-title,
+    .users-title {
+        font-size: 1.5rem;
     }
 
     .metrics-grid {
@@ -1292,5 +1305,14 @@ body {
 
     .pie-chart-card {
         width: 100%;
+    }
+
+    .main-dashboard-logo {
+        width: 100%;
+    }
+
+    .main-panel {
+        border-radius: 12px;
+        margin-top: 40px;
     }
 }
