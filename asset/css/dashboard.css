@@ -207,6 +207,7 @@ body {
     padding: 0.75rem 0 0.125rem;
     max-width: 100%;
     width: 193px;
+    margin: auto;
 }
 
 .chart-icon {
@@ -985,7 +986,11 @@ body {
     }
 
     .main-content-dashboard {
-        padding: 0 1.25rem;
+        padding: 10px;
+    }
+
+    .chart-card {
+        width: 100%;
     }
 
     .main-panel {
@@ -1296,5 +1301,10 @@ body {
 
     .main-dashboard-logo {
         width: 100%;
+    }
+
+    .main-panel {
+        border-radius: 12px;
+        margin-top: 40px;
     }
 }
