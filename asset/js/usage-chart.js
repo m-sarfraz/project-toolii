@@ -1,14 +1,13 @@
 // Usage Overview Chart Implementation
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const ctx = document.getElementById('usageChart');
-    
+
     if (!ctx) return;
 
     // Generate wavy data similar to the screenshot
     const generateWavyData = (baseValue, amplitude, points) => {
         const data = [];
         for (let i = 0; i < points; i++) {
-            // Create wavy pattern using sine waves with some randomness
             const wave1 = Math.sin(i * 0.5) * amplitude;
             const wave2 = Math.sin(i * 0.3 + 1) * (amplitude * 0.5);
             const noise = (Math.random() - 0.5) * (amplitude * 0.3);
@@ -18,10 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     const labels = ['1/9', '2/9', '3/9', '4/9', '5/9', '6/9', '7/9', '8/9', '9/9', '10/9', '11/9', '12/9'];
-    
-    // Generate data for two lines matching the screenshot
+
+    // Existing lines
     const upperLineData = generateWavyData(750, 80, 12);
     const lowerLineData = generateWavyData(550, 40, 12);
+
+    // 🔥 NEW — Error line data
+    const errorLineData = generateWavyData(300, 30, 12);
 
     new Chart(ctx, {
         type: 'line',
@@ -55,9 +57,26 @@ document.addEventListener('DOMContentLoaded', function() {
                     pointHoverBorderColor: '#fff',
                     pointHoverBorderWidth: 2,
                     fill: false
+                },
+
+                // 🔥 NEW ERROR LINE (RED)
+                {
+                    label: 'Errors',
+                    data: errorLineData,
+                    borderColor: '#ef4444', // red-500
+                    backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    pointRadius: 0,
+                    pointHoverRadius: 4,
+                    pointHoverBackgroundColor: '#ef4444',
+                    pointHoverBorderColor: '#fff',
+                    pointHoverBorderWidth: 2,
+                    fill: false
                 }
             ]
         },
+
         options: {
             responsive: true,
             maintainAspectRatio: false,
@@ -78,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     padding: 12,
                     displayColors: true,
                     callbacks: {
-                        label: function(context) {
+                        label: function (context) {
                             return context.dataset.label + ': ' + Math.round(context.parsed.y);
                         }
                     }
@@ -91,10 +110,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     ticks: {
                         stepSize: 200,
                         color: '#6b7280',
-                        font: {
-                            size: 12
-                        },
-                        callback: function(value) {
+                        font: { size: 12 },
+                        callback: function (value) {
                             return value.toLocaleString();
                         }
                     },
@@ -106,9 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 x: {
                     ticks: {
                         color: '#6b7280',
-                        font: {
-                            size: 12
-                        }
+                        font: { size: 12 }
                     },
                     grid: {
                         display: false,
@@ -119,4 +134,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-

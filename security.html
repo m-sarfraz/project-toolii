@@ -44,12 +44,10 @@
         <div class="header">
             <div class="header-title">Settings</div>
             <div class="portal-colors-section">
-                <div class="portal-colors-title">Portal Colors</div>
                 <div class="color-palette">
                     <div class="color-circle color-violet" data-color="violet"></div>
                     <div class="color-circle color-emerald" data-color="emerald"></div>
                     <div class="color-circle color-blue" data-color="blue"></div>
-                    <div class="color-circle color-fuchsia" data-color="fuchsia"></div>
                 </div>
             </div>
         </div>
@@ -65,7 +63,8 @@
                             <img width="36" height="47" src="asset/images/option-1.svg" class="icon-image"
                                 alt="Clinic Icon">
                         </div>
-                        <div class="icon-container custom-tooltip" data-tooltip="Disable">
+                        <div class="icon-container custom-tooltip"
+                            data-tooltip="Disable web based manual intervention tool">
                             <img width="36" height="47" src="asset/images/option-2.svg" class="icon-image" alt="Icon 1">
                         </div>
                         <div class="icon-container  custom-tooltip" data-tooltip="Disable Auto Updater">
@@ -142,6 +141,10 @@
                                             <select class="form-input w-100 px-2" name="permission"
                                                 id="permissionSelect">
                                                 <option value="" selected> Select permissions</option>
+                                                <option value="">Admin</option>
+                                                <option value="">management</option>
+                                                <option value="">Allocator</option>
+                                                <option value="">Stafff</option>
                                             </select>
                                         </div>
                                     </div>
@@ -149,6 +152,10 @@
                                     <div class="form-row">
                                         <div class="form-field">
                                             <label class="label">Password</label>
+                                            <input type="password" class="input" value="*******">
+                                        </div>
+                                        <div class="form-field">
+                                            <label class="label">Confirm Password</label>
                                             <input type="password" class="input" value="*******">
                                         </div>
                                     </div>
@@ -260,21 +267,21 @@
                         <input type="text" class="input" value="\\65a4f65a\\465asd4f65a1sd6f\54asd4f654as6df">
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-field">
+                    <div class="form-row col-md-12 col-12 justify-content-between">
+                        <div class="form-field col-4">
                             <label class="label">Principle Doctor First Name</label>
                             <input type="text" class="input" value="Jasendra">
                         </div>
-                        <div class="form-field">
+                        <div class="form-field col-4">
                             <label class="label">Principle Doctor Last Name</label>
                             <input type="text" class="input" value="Aranbepoola">
                         </div>
+                        <div class="form-group col-3">
+                            <label class="label">Max Pages</label>
+                            <input type="number" class="input" value="3">
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="label">Max Pages</label>
-                        <input type="number" class="input" value="3">
-                    </div>
 
                     <div class="button-row-end">
                         <button class="update-details-btn flex-3">Update Details</button>
