@@ -199,6 +199,7 @@ body {
     min-height: 146px;
     min-width: 15rem;
     width: 294px;
+    height: -webkit-fill-available;
 }
 
 .chart-content {
