@@ -366,6 +366,7 @@ body {
     gap: 1rem;
     margin: auto 0;
     width: 200px;
+    margin: auto;
 }
 
 .pie-chart-image {
@@ -555,6 +556,7 @@ body {
     color: #4b5563;
     border-radius: 0.5rem;
     border: 1px solid #e5e7eb;
+    margin-left: auto;
 }
 
 .table-column {
@@ -997,8 +999,11 @@ body {
         padding: 1.25rem;
     }
 
-    .welcome-text {
-        font-size: 2.25rem;
+    .welcome-text,
+    .overview-title,
+    .error-logs-title,
+    .users-title {
+        font-size: 1.5rem;
     }
 
     .metrics-grid {
