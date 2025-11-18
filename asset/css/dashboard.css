@@ -57,7 +57,7 @@ body {
 }
 
 /* Main Content */
-.main-content {
+.main-content-dashboard {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -984,7 +984,7 @@ body {
         padding: 0 1.25rem;
     }
 
-    .main-content {
+    .main-content-dashboard {
         padding: 0 1.25rem;
     }
 
@@ -1291,6 +1291,10 @@ body {
     }
 
     .pie-chart-card {
+        width: 100%;
+    }
+
+    .main-dashboard-logo {
         width: 100%;
     }
 }
