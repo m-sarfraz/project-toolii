@@ -77,7 +77,16 @@ body {
   align-items: center;
   min-width: 15rem;
 }
-
+.modal.show .modal-dialog {
+  min-width: 50% !important;
+  background: #fef8ff;
+  box-shadow: 0px 4px 20px #ccbdff;
+  border-radius: 20px;
+  min-height: fit-content;
+}
+.modal-body {
+  padding: 2em !important;
+}
 .color-circle {
   width: 3.5rem;
   height: 3.5rem;
@@ -114,17 +123,14 @@ body {
 
 .left-column {
   flex: 1;
-  min-width: 15rem;
   display: flex;
   flex-direction: column;
 }
 
 .right-column {
   flex: 1;
-  min-width: 15rem;
   display: flex;
   flex-direction: column;
-  min-height: 69rem;
 }
 .subheading-form {
   font-family: "Inter";
@@ -197,7 +203,7 @@ label {
 }
 
 .form-group {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.2em;
   width: 100%;
 }
 
@@ -288,6 +294,7 @@ label {
   line-height: 20px;
   color: #ffffff;
   border: none;
+  outline: none;
 }
 .dropdown {
   display: flex;
@@ -490,13 +497,61 @@ label {
 .action-delete {
   color: var(--red-600);
 }
+.btn-close {
+  padding: 1em !important;
+}
+.custom-tooltip {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.custom-tooltip::before {
+  content: attr(data-tooltip);
+  visibility: hidden;
+  opacity: 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 8px;
+  position: absolute;
+  z-index: 10;
+  font-size: 12px;
+  white-space: nowrap;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 10px;
+  gap: 10px;
+  width: fit-content;
+  height: 20px;
+  background: #535862;
+  border-radius: 100px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.82206px;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.custom-tooltip:hover::before {
+  visibility: visible;
+  opacity: 1;
+}
 
 .upload-area {
   width: 100%;
   text-align: center;
   border-radius: 0.5rem;
   border: 1px solid rgba(75, 85, 99, 0.2);
-  padding: 1.5em 1.5em 1em 1em;
+  padding: 1.5em 1.5em 0.5em 1em;
   background-color: var(--white);
 }
 
@@ -584,6 +639,7 @@ label {
   gap: 1.25rem;
   align-items: flex-start;
   width: 100%;
+  margin: 2em 0px;
 }
 
 .button-large {
