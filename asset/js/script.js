@@ -172,9 +172,9 @@ $(document).ready(function () {
         $(".signIn-error-message").text("");
         $(this).find("input").each(function () {
             console.log('111111');
-            
+
             let value = $(this).val().trim();
-let errorSpan = $(this).closest('.input-field').next(".signIn-error-message");
+            let errorSpan = $(this).closest('.input-field').next(".signIn-error-message");
 
             if (value === "") {
                 hasError = true;
