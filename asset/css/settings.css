@@ -34,6 +34,8 @@ body {
   background-color: var(--gray-50);
   color: var(--text-secondary);
   line-height: 1.5;
+  transform: scale(0.92);
+  transform-origin: top center;
 }
 
 .security-container {
@@ -43,6 +45,17 @@ body {
   box-shadow: 0px 4px 16px rgba(215, 207, 243, 1);
 }
 
+body.modal-open-disable-scale {
+  transform: none !important;
+  transform-origin: initial !important;
+  width: 100% !important;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
+.modal.fade .modal-dialog {
+  transition: transform 0.15s ease-out !important;
+}
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +63,10 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+.table {
+  max-width: 100% !important;
+  overflow: auto !important;
 }
 
 .header-title {
@@ -706,6 +723,9 @@ label {
   .left-column {
     min-width: 100%;
     max-width: 100%;
+  }
+  .modal.show .modal-dialog {
+    min-width: 95% !important;
   }
 
   .header {

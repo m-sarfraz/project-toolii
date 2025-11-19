@@ -10,7 +10,10 @@ body {
     background-color: #f5f3ff;
     min-height: 100vh;
 } */
-
+body {
+  transform: scale(0.92);
+  transform-origin: top center;
+}
 .dashboard {
   background-color: #f5f3ff;
 }

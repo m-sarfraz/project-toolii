@@ -112,93 +112,7 @@
                             Add New Employee
                         </button>
                     </div>
-                    <div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledby="addUserModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered w-50">
-                            <div class="modal-content align-items-end">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                                <div class="modal-body w-100">
-                                    <div class="card-title mb-3 subheading-form">Add User</div>
-                                    <div class="form-row">
-                                        <div class="form-field">
-                                            <label class="label">Full Name</label>
-                                            <input type="text" class="input" value="John Wick">
-                                        </div>
-                                        <div class="form-field">
-                                            <label class="label">Email</label>
-                                            <input type="email" class="input" value="johnwick@tooli.com">
-                                        </div>
-                                    </div>
 
-                                    <div class="form-row">
-                                        <div class="form-field">
-                                            <label class="label">Role</label>
-                                            <input type="text" class="input" placeholder="Select Role">
-                                        </div>
-                                        <div class="form-field">
-                                            <label class="label">Permissions</label>
-                                            <select class="form-input w-100 px-2" name="permission"
-                                                id="permissionSelect">
-                                                <option value="" selected> Select permissions</option>
-                                                <option value="">Admin</option>
-                                                <option value="">management</option>
-                                                <option value="">Allocator</option>
-                                                <option value="">Stafff</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-row">
-                                        <div class="form-field">
-                                            <label class="label">Password</label>
-                                            <input type="password" class="input" value="*******">
-                                        </div>
-                                        <div class="form-field">
-                                            <label class="label">Confirm Password</label>
-                                            <input type="password" class="input" value="*******">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="label">Upload profile picture</label>
-                                        <div class="upload-area">
-                                            <div class="upload-content">
-                                                <svg width="69" height="60" viewBox="0 0 69 60" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M46.0996 5.70117C46.5864 5.70117 46.9813 6.09627 46.9814 6.58301C46.9814 7.06987 46.5865 7.46484 46.0996 7.46484C41.9873 7.46495 38.2966 10.2157 37.125 14.1523C36.9869 14.618 36.4967 14.8856 36.0283 14.7461C35.5619 14.607 35.2955 14.1162 35.4346 13.6494C36.7983 9.06679 41.0456 5.70127 46.0996 5.70117Z"
-                                                        fill="#C1B4F8" stroke="#F9FFF9" stroke-width="0.3" />
-                                                    <path
-                                                        d="M56.3438 42.4384H51.9534C51.5494 42.4384 51.2217 42.1107 51.2217 41.7067C51.2217 41.3027 51.5494 40.9749 51.9534 40.9749H56.3438C62.3956 40.9749 67.3197 36.0509 67.3197 29.999C67.3197 23.9471 62.3956 19.023 56.3438 19.023H56.2382C56.026 19.023 55.8242 18.9311 55.6852 18.7706C55.5462 18.6101 55.4834 18.3974 55.5138 18.1873C55.5791 17.7315 55.612 17.2737 55.612 16.8279C55.612 11.5829 51.3444 7.31531 46.0995 7.31531C44.059 7.31531 42.1131 7.95296 40.4719 9.15978C40.1112 9.42478 39.599 9.30718 39.3905 8.91047C34.7425 0.0596991 22.6023 -1.12887 16.3082 6.57053C13.6568 9.81417 12.615 14.0336 13.4498 18.146C13.5418 18.6002 13.1942 19.0236 12.7327 19.0236H12.4395C6.3876 19.0236 1.46353 23.9477 1.46353 29.9996C1.46353 36.0514 6.3876 40.9755 12.4395 40.9755H16.8298C17.2338 40.9755 17.5615 41.3032 17.5615 41.7072C17.5615 42.1113 17.2338 42.439 16.8298 42.439H12.4395C5.5805 42.439 0 36.8585 0 29.9995C0 23.3329 5.27155 17.8742 11.8651 17.5731C11.2457 13.3066 12.4301 9.00295 15.1751 5.64437C21.9138 -2.5996 34.828 -1.67556 40.2871 7.51707C42.0287 6.42522 44.0215 5.85244 46.0992 5.85244C52.4538 5.85244 57.4892 11.261 57.0486 17.58C63.5813 17.9463 68.7829 23.3763 68.7829 29.999C68.7829 36.8585 63.2027 42.4384 56.3438 42.4384Z"
-                                                        fill="#C1B4F8" />
-                                                    <path
-                                                        d="M34.2939 22.8496C44.4637 22.8499 52.7373 31.1242 52.7373 41.2939C52.7371 51.4634 44.4635 59.7371 34.2939 59.7373C24.1243 59.7373 15.8499 51.4637 15.8496 41.2939C15.8496 31.1241 24.124 22.8496 34.2939 22.8496ZM34.2939 24.6143C25.0969 24.6143 17.6143 32.097 17.6143 41.2939C17.6145 50.4908 25.0972 57.9736 34.2939 57.9736C43.4905 57.9734 50.9734 50.4905 50.9736 41.2939C50.9736 32.0971 43.4906 24.6145 34.2939 24.6143Z"
-                                                        fill="#C1B4F8" stroke="#F9FFF9" stroke-width="0.3" />
-                                                    <path
-                                                        d="M34.6285 49.1934C34.3327 49.1934 34.0928 48.9534 34.0928 48.6577V34.7291C34.0928 34.4333 34.3327 34.1934 34.6285 34.1934C34.9243 34.1934 35.1642 34.4333 35.1642 34.7291V48.6577C35.1642 48.9538 34.9243 49.1934 34.6285 49.1934Z"
-                                                        fill="#C1B4F8" />
-                                                    <path
-                                                        d="M38.9138 39.5515C38.7768 39.5515 38.6394 39.4991 38.5349 39.3946L34.6281 35.4878L30.7213 39.3946C30.5123 39.6039 30.1729 39.6039 29.9636 39.3946C29.7543 39.1853 29.7543 38.8463 29.9636 38.637L34.2493 34.3513C34.4582 34.142 34.7976 34.142 35.0069 34.3513L39.2925 38.637C39.5019 38.8463 39.5019 39.1853 39.2925 39.3946C39.1881 39.4994 39.0507 39.5515 38.9137 39.5515H38.9138Z"
-                                                        fill="#C1B4F8" />
-                                                </svg>
-
-                                                <div class="upload-text">
-                                                    Drag & drop files or <span class="upload-link">Browse</span>
-                                                </div>
-                                                <div class="upload-formats">Supported formates: JPEG, PNG</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="button-row">
-                                        <button class="button-outline" data-bs-dismiss="modal">Cancel</button>
-                                        <button class="cursor-pointer add-employe">Add Employee</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="table">
                         <div class="table-row table-header">
                             <div class="table-cell">Full name</div>
@@ -303,6 +217,90 @@
                     </div>
 
                     <button class="update-clinic-btn w-100">Update Clinic</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledby="addUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-50">
+            <div class="modal-content align-items-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body w-100">
+                    <div class="card-title mb-3 subheading-form">Add User</div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label class="label">Full Name</label>
+                            <input type="text" class="input" value="John Wick">
+                        </div>
+                        <div class="form-field">
+                            <label class="label">Email</label>
+                            <input type="email" class="input" value="johnwick@tooli.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label class="label">Role</label>
+                            <input type="text" class="input" placeholder="Select Role">
+                        </div>
+                        <div class="form-field">
+                            <label class="label">Permissions</label>
+                            <select class="form-input w-100 px-2" name="permission" id="permissionSelect">
+                                <option value="" selected> Select permissions</option>
+                                <option value="">Admin</option>
+                                <option value="">management</option>
+                                <option value="">Allocator</option>
+                                <option value="">Stafff</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label class="label">Password</label>
+                            <input type="password" class="input" value="*******">
+                        </div>
+                        <div class="form-field">
+                            <label class="label">Confirm Password</label>
+                            <input type="password" class="input" value="*******">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Upload profile picture</label>
+                        <div class="upload-area">
+                            <div class="upload-content">
+                                <svg width="69" height="60" viewBox="0 0 69 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M46.0996 5.70117C46.5864 5.70117 46.9813 6.09627 46.9814 6.58301C46.9814 7.06987 46.5865 7.46484 46.0996 7.46484C41.9873 7.46495 38.2966 10.2157 37.125 14.1523C36.9869 14.618 36.4967 14.8856 36.0283 14.7461C35.5619 14.607 35.2955 14.1162 35.4346 13.6494C36.7983 9.06679 41.0456 5.70127 46.0996 5.70117Z"
+                                        fill="#C1B4F8" stroke="#F9FFF9" stroke-width="0.3" />
+                                    <path
+                                        d="M56.3438 42.4384H51.9534C51.5494 42.4384 51.2217 42.1107 51.2217 41.7067C51.2217 41.3027 51.5494 40.9749 51.9534 40.9749H56.3438C62.3956 40.9749 67.3197 36.0509 67.3197 29.999C67.3197 23.9471 62.3956 19.023 56.3438 19.023H56.2382C56.026 19.023 55.8242 18.9311 55.6852 18.7706C55.5462 18.6101 55.4834 18.3974 55.5138 18.1873C55.5791 17.7315 55.612 17.2737 55.612 16.8279C55.612 11.5829 51.3444 7.31531 46.0995 7.31531C44.059 7.31531 42.1131 7.95296 40.4719 9.15978C40.1112 9.42478 39.599 9.30718 39.3905 8.91047C34.7425 0.0596991 22.6023 -1.12887 16.3082 6.57053C13.6568 9.81417 12.615 14.0336 13.4498 18.146C13.5418 18.6002 13.1942 19.0236 12.7327 19.0236H12.4395C6.3876 19.0236 1.46353 23.9477 1.46353 29.9996C1.46353 36.0514 6.3876 40.9755 12.4395 40.9755H16.8298C17.2338 40.9755 17.5615 41.3032 17.5615 41.7072C17.5615 42.1113 17.2338 42.439 16.8298 42.439H12.4395C5.5805 42.439 0 36.8585 0 29.9995C0 23.3329 5.27155 17.8742 11.8651 17.5731C11.2457 13.3066 12.4301 9.00295 15.1751 5.64437C21.9138 -2.5996 34.828 -1.67556 40.2871 7.51707C42.0287 6.42522 44.0215 5.85244 46.0992 5.85244C52.4538 5.85244 57.4892 11.261 57.0486 17.58C63.5813 17.9463 68.7829 23.3763 68.7829 29.999C68.7829 36.8585 63.2027 42.4384 56.3438 42.4384Z"
+                                        fill="#C1B4F8" />
+                                    <path
+                                        d="M34.2939 22.8496C44.4637 22.8499 52.7373 31.1242 52.7373 41.2939C52.7371 51.4634 44.4635 59.7371 34.2939 59.7373C24.1243 59.7373 15.8499 51.4637 15.8496 41.2939C15.8496 31.1241 24.124 22.8496 34.2939 22.8496ZM34.2939 24.6143C25.0969 24.6143 17.6143 32.097 17.6143 41.2939C17.6145 50.4908 25.0972 57.9736 34.2939 57.9736C43.4905 57.9734 50.9734 50.4905 50.9736 41.2939C50.9736 32.0971 43.4906 24.6145 34.2939 24.6143Z"
+                                        fill="#C1B4F8" stroke="#F9FFF9" stroke-width="0.3" />
+                                    <path
+                                        d="M34.6285 49.1934C34.3327 49.1934 34.0928 48.9534 34.0928 48.6577V34.7291C34.0928 34.4333 34.3327 34.1934 34.6285 34.1934C34.9243 34.1934 35.1642 34.4333 35.1642 34.7291V48.6577C35.1642 48.9538 34.9243 49.1934 34.6285 49.1934Z"
+                                        fill="#C1B4F8" />
+                                    <path
+                                        d="M38.9138 39.5515C38.7768 39.5515 38.6394 39.4991 38.5349 39.3946L34.6281 35.4878L30.7213 39.3946C30.5123 39.6039 30.1729 39.6039 29.9636 39.3946C29.7543 39.1853 29.7543 38.8463 29.9636 38.637L34.2493 34.3513C34.4582 34.142 34.7976 34.142 35.0069 34.3513L39.2925 38.637C39.5019 38.8463 39.5019 39.1853 39.2925 39.3946C39.1881 39.4994 39.0507 39.5515 38.9137 39.5515H38.9138Z"
+                                        fill="#C1B4F8" />
+                                </svg>
+
+                                <div class="upload-text">
+                                    Drag & drop files or <span class="upload-link">Browse</span>
+                                </div>
+                                <div class="upload-formats">Supported formates: JPEG, PNG</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button-row">
+                        <button class="button-outline" data-bs-dismiss="modal">Cancel</button>
+                        <button class="cursor-pointer add-employe">Add Employee</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -441,6 +439,12 @@
             if (buttonText.includes('Update') || buttonText.includes('Add')) {
                 e.preventDefault();
                 console.log(`${buttonText} clicked`);
+                if (buttonText.toLowerCase() === 'add new employee') {
+                    $('body').css({
+                        'transform': 'none',
+                        'transform-origin': 'initial'
+                    });
+                }
                 // Add loading state
                 $(this).text('Processing...');
                 setTimeout(() => {
@@ -448,7 +452,12 @@
                 }, 2000);
             }
         });
-
+        $(document).on('hidden.bs.modal', function () {
+            $('body').css({
+                'transform': 'scale(0.92)',
+                'transform-origin': ' top center'
+            });
+        });
         // Initialize with violet theme
         updateTheme('violet');
     });
