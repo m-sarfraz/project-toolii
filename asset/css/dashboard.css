@@ -88,6 +88,12 @@ body {
 
 .welcome-text {
   margin: auto 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: #171840;
 }
 
 /* Metrics Grid */
@@ -101,28 +107,37 @@ body {
 }
 
 .metric-card {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: -webkit-fill-available;
-  flex: 1;
-  flex-shrink: 1;
   align-items: center;
-  padding: 1rem;
-  margin: auto 0;
-  font-weight: 600;
-  text-align: center;
-  background-color: white;
-  border-radius: 0.75rem;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  flex-basis: 4rem;
-  min-height: 146px;
-  width: 100%;
+  padding: 21px 16px;
+  gap: 5px;
+  isolation: isolate;
+
+  width: 172.86px;
+  height: 146px;
+
+  background: #ffffff;
+  border: 1px solid #e9eaeb;
+  box-shadow: 0px 0px 12px rgba(161, 162, 255, 0.25),
+    0px 1px 2px rgba(10, 13, 18, 0.05);
+  border-radius: 12px;
+
   max-width: 172px;
   max-height: 146px;
 }
-
+.metric-heading > div {
+  width: 98px;
+  height: 57px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #181d27;
+}
 .metric-card.error-bg {
   background-color: #fecaca;
 }
@@ -134,7 +149,24 @@ body {
 .metric-card.purple-bg {
   background-color: #faf5ff;
 }
-
+.blue-300 {
+  background-color: #8fb6ff !important;
+}
+.blue-400 {
+  background-color: #699eff !important;
+}
+.blue-600 {
+  background-color: #1064ff !important;
+}
+.red-400 {
+  background-color: #ff7676 !important;
+}
+.green-400 {
+  background-color: #4fc87f !important;
+}
+.custom-width-long-text {
+  width: 120px !important;
+}
 .metric-number {
   display: flex;
   gap: 0.625rem;
@@ -1015,7 +1047,7 @@ body {
   .overview-title,
   .error-logs-title,
   .users-title {
-    font-size: 1.5rem;
+    font-size: 1em;
   }
 
   .metrics-grid {
