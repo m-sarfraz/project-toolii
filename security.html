@@ -105,8 +105,8 @@
                 </div>
 
                 <!-- Users custom-card -->
-                <div class="custom-card">
-                    <div class="button-row" style="margin-bottom: 1.25rem;">
+                <div class="custom-card mb-1">
+                    <div class="button-row">
                         <div class="card-title mb-3 subheading-form" style="margin-bottom: 0;">Users</div>
                         <button type="button" class="add-employe" data-bs-toggle="modal" data-bs-target="#addUserModal">
                             Add New Employee
@@ -140,16 +140,7 @@
                                 <a href="#" class="action-link action-delete">Delete</a>
                             </div>
                         </div>
-                        <div class="table-row">
-                            <div class="table-cell">Smith Will</div>
-                            <div class="table-cell">smith@tooli.com</div>
-                            <div class="table-cell">Allocator</div>
-                            <div class="table-actions">
-                                <a href="#" class="action-link action-permissions">Permissions</a>
-                                <a href="#" class="action-link action-edit">Edit</a>
-                                <a href="#" class="action-link action-delete">Delete</a>
-                            </div>
-                        </div>
+                      
                     </div>
                 </div>
 
@@ -204,7 +195,7 @@
                 </div>
 
                 <!-- Semi-Processing Card -->
-                <div class="custom-card">
+                <div class="custom-card mb-1">
                     <div class="checkbox-container justify-content-start">
                         <input type="checkbox" class="checkbox" id="semiProcessing">
                         <label for="semiProcessing" class="checkbox-label">Enable Semi-Processing</label>
@@ -248,9 +239,9 @@
                             <select class="form-input w-100 px-2" name="permission" id="permissionSelect">
                                 <option value="" selected> Select permissions</option>
                                 <option value="">Admin</option>
-                                <option value="">management</option>
+                                <option value="">Management</option>
                                 <option value="">Allocator</option>
-                                <option value="">Stafff</option>
+                                <option value="">Staff</option>
                             </select>
                         </div>
                     </div>
@@ -452,12 +443,12 @@
                 }, 2000);
             }
         });
-        $(document).on('hidden.bs.modal', function () {
-            $('body').css({
-                'transform': 'scale(0.92)',
-                'transform-origin': ' top center'
-            });
-        });
+        // $(document).on('hidden.bs.modal', function () {
+        //     $('body').css({
+        //         'transform': 'scale(0.92)',
+        //         'transform-origin': ' top center'
+        //     });
+        // });
         // Initialize with violet theme
         updateTheme('violet');
     });

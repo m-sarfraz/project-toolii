@@ -34,8 +34,8 @@ body {
   background-color: var(--gray-50);
   color: var(--text-secondary);
   line-height: 1.5;
-  transform: scale(0.92);
-  transform-origin: top center;
+  /* transform: scale(0.92); */
+  /* transform-origin: top center; */
 }
 
 .security-container {
@@ -70,7 +70,7 @@ body.modal-open-disable-scale {
 }
 
 .header-title {
-  font-size: 32px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -155,7 +155,7 @@ body.modal-open-disable-scale {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 39px;
   color: #171840;
 }
@@ -165,7 +165,7 @@ body.modal-open-disable-scale {
   background-color: var(--primary-bg) !important;
   border-radius: 1.5rem !important;
   box-shadow: 0px 4px 20px #ccbdff !important;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 input,
 select {
@@ -203,8 +203,8 @@ label {
   display: flex;
   gap: 0.75rem;
   align-items: center;
-  margin-bottom: 1.25rem;
-  max-width: 25.4375rem;
+  /* margin-bottom: 1.25rem;
+  max-width: 25.4375rem; */
 }
 
 .icon-container {
@@ -684,9 +684,9 @@ label {
   align-items: center;
   display: flex;
 }
-.custom-pb-5 {
+/* .custom-pb-5 {
   padding-bottom: 2.5em;
-}
+} */
 
 .checkbox {
   width: 18px;
