@@ -88,7 +88,7 @@
 
 .main_content_wrapper {
   gap: 120px;
-  height: calc(100vh - 80px);
+  align-items: center;
 }
 @media (max-width: 1190px) {
   .heading {
@@ -152,6 +152,36 @@
     justify-content: center;
   }
   .main_content_wrapper {
+    gap: 10px;
+    align-items: flex-start !important;
+  }
+  .mascot_wrapper img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 650px) {
+  .description {
+    text-align: justify;
+  }
+  .main_content_wrapper {
+    align-items: flex-start !important  ;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  .logo img {
+    max-width: 300px !important;
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .custom_container {
+    width: 100%;
+    padding: 23px 5px;
+    margin: 20px 5px;
+  }
+  .heading__info {
+    gap: 10px;
   }
 }

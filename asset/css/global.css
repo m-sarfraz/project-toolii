@@ -70,7 +70,7 @@ button {
   align-items: center;
   align-self: stretch;
   /* max-width: 97%; */
-  padding: 0 20px 0px 3.5em;
+  padding: 0 20px 0px 5px;
   width: 100%;
 }
 
@@ -175,7 +175,7 @@ button {
   display: flex;
   position: relative;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   align-self: stretch;
   padding: 50px 0;
   gap: 220px;
@@ -215,6 +215,7 @@ button {
   max-width: 450px;
   filter: drop-shadow(-10px 0 50px #e6daffff);
   box-shadow: 0 0 80px 20px #e1ccf6;
+  z-index: 9;
 }
 
 .form-header {
@@ -573,166 +574,6 @@ button {
   filter: blur(20px);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header-container {
-    padding: 0 40px;
-  }
-  .signUp-input-container {
-    width: 100% !important;
-  }
-
-  .header-title {
-    font-size: 18px;
-  }
-
-  .navigation {
-    display: none;
-  }
-
-  .header-actions {
-    gap: 10px;
-  }
-
-  .main-content {
-    flex-direction: column;
-    padding: 20px 0;
-  }
-
-  .form-section {
-    padding: 64px 40px;
-  }
-
-  .form-container {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .form-title {
-    font-size: 24px;
-  }
-
-  .input-field {
-    padding: 12px;
-  }
-
-  .input-field input {
-    font-size: 18px;
-  }
-
-  .remember-me label {
-    font-size: 20px;
-  }
-
-  .forgot-password {
-    font-size: 20px;
-  }
-
-  .recaptcha-content {
-    gap: 16px;
-  }
-
-  .signin-button {
-    font-size: 30px;
-  }
-
-  .or-text {
-    font-size: 18px;
-  }
-
-  .signup-text {
-    font-size: 20px;
-  }
-
-  .illustration-section {
-    padding: 20px;
-    order: -1;
-  }
-
-  .illustration-image {
-    height: 438px;
-    width: 300px;
-  }
-}
-
-@media (max-width: 640px) {
-  .header-container {
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    height: auto;
-  }
-
-  .logo-section {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .header-actions {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .form-section {
-    padding: 40px 20px;
-  }
-
-  .form-container {
-    padding: 24px;
-    border-radius: 24px;
-    width: 100%;
-  }
-
-  .form-title {
-    font-size: 20px;
-  }
-
-  .input-field {
-    padding: 12px;
-  }
-
-  .input-field input {
-    font-size: 16px;
-  }
-
-  .remember-me label {
-    font-size: 16px;
-  }
-
-  .forgot-password {
-    font-size: 16px;
-  }
-
-  .robot-checkbox label {
-    font-size: 14px;
-  }
-
-  .signin-button {
-    padding: 24px 12px;
-    height: 60px;
-    font-size: 20px;
-  }
-
-  .or-text {
-    font-size: 16px;
-  }
-
-  .google-button {
-    width: 100%;
-    height: 50px;
-  }
-
-  .signup-text {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .illustration-image {
-    height: 365px;
-    width: 250px;
-  }
-}
-
 /* sign up css */
 
 .signUp-container {
@@ -758,6 +599,7 @@ button {
   margin-left: 8em;
   /* margin-top: 3em; */
   box-shadow: 0 0 80px 20px #e1ccf6;
+  z-index: 9;
 }
 
 .signUp-title {
@@ -1012,42 +854,12 @@ button {
   font-weight: 400;
   margin-top: 1.25rem;
 }
-
-@media (max-width: 768px) {
-  .signUp-form-wrapper {
-    padding: 1.25rem;
-    margin: 0;
-  }
-  .sign-up-wrapper-main {
-    flex-direction: column-reverse;
-  }
-  .signUp-input-wrapper {
-    width: 100%;
-  }
-  .signUp-container {
-    padding: 0;
-  }
-
-  .signUp-input-row.signUp-optional-row {
-    flex-direction: column;
-  }
-
-  .signUp-submit-button {
-    font-size: 24px;
-    min-height: 64px;
-  }
-  .signUp-input-row {
-    flex-wrap: wrap;
-  }
-  .main-content {
-    gap: 50px;
-  }
-}
 .signup-illustration {
   width: 400px;
   height: 400px;
 }
 
+/* Responsive Design */
 @media (max-width: 1150px) {
   .signup-illustration {
     height: 300px !important;
@@ -1055,6 +867,24 @@ button {
   }
   .right__img {
     height: 350px;
+  }
+  .main-content {
+    gap: 1em;
+  }
+}
+@media (max-width: 992px) {
+  .signup-illustration {
+    height: 238px !important;
+    width: 200px !important;
+  }
+  .main-content {
+    flex-direction: column-reverse;
+    align-items: center !important;
+    padding: 5px 0;
+    margin: 10px 0px;
+  }
+  .signUp-form-wrapper {
+    margin-left: unset;
   }
 }
 
@@ -1082,11 +912,230 @@ button {
     height: fit-content;
   }
 }
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 40px;
+  }
+  .signUp-input-container {
+    width: 100% !important;
+  }
+
+  .header-title {
+    font-size: 18px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 10px;
+  }
+
+  .main-content {
+    padding: 20px 0;
+  }
+
+  .form-section {
+    padding: 64px 40px;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .input-field {
+    padding: 12px;
+  }
+
+  .input-field input {
+    font-size: 18px;
+  }
+
+  .remember-me label {
+    font-size: 20px;
+  }
+
+  .forgot-password {
+    font-size: 20px;
+  }
+
+  .recaptcha-content {
+    gap: 16px;
+  }
+
+  .signin-button {
+    font-size: 24px;
+    height: 50px;
+  }
+
+  .or-text {
+    font-size: 18px;
+  }
+
+  .signup-text {
+    font-size: 20px;
+  }
+
+  .illustration-section {
+    padding: 20px;
+    order: -1;
+  }
+
+  .illustration-image {
+    height: 438px;
+    width: 300px;
+  }
+  .signUp-form-wrapper {
+    padding: 1.25rem;
+    margin: 0;
+  }
+
+  .signUp-input-wrapper {
+    width: 100%;
+  }
+  .signUp-container {
+    padding: 0;
+  }
+
+  .signUp-submit-button {
+    font-size: 24px;
+    min-height: 64px;
+  }
+
+  .main-content {
+    gap: 50px;
+    flex-direction: column !important;
+  }
+  .illustration-section {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .signUp-input-row {
+    flex-wrap: wrap;
+  }
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    height: auto;
+  }
+
+  .logo-section {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .header-actions {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form-section {
+    padding: 40px 20px;
+  }
+
+  .form-container {
+    padding: 24px;
+    border-radius: 24px;
+    width: 100%;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+
+  .input-field {
+    padding: 12px;
+  }
+
+  .input-field input {
+    font-size: 16px;
+  }
+
+  .remember-me label {
+    font-size: 16px;
+  }
+
+  .forgot-password {
+    font-size: 16px;
+  }
+
+  .robot-checkbox label {
+    font-size: 14px;
+  }
+
+  .signin-button {
+    padding: 24px 12px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .or-text {
+    font-size: 16px;
+  }
+
+  .google-button {
+    width: 100%;
+    height: 50px;
+  }
+
+  .signup-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .illustration-image {
+    height: 365px;
+    width: 250px;
+  }
+}
 @media (max-width: 400px) {
   .form-title {
     font-size: 14px;
   }
   .form-logo img {
     width: 150px;
+  }
+  .logo img {
+    max-width: 300px;
+  }
+  .form-options {
+    flex-direction: column-reverse;
+  }
+  .forgot-password {
+    align-self: end;
+    position: relative;
+    top: -1.5em;
+  }
+  .remember-me {
+    align-self: flex-start;
+  }
+  .form-container {
+    padding: 1em;
+  }
+  .form-section {
+    padding: 10px 4px;
+  }
+  .signUp-captcha-box .signUp-checkbox-wrapper {
+    gap: 2px;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-evenly;
+  }
+  .signin-button {
+    padding: 24px 12px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .signUp-captcha-box {
+    width: 100%;
   }
 }
