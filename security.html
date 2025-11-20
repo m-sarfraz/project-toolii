@@ -26,7 +26,7 @@
             <div class="header-container">
                 <div class="logo-section">
                     <a href="/" class="logo">
-                        <img src="/asset/images/logo.svg" alt="logo" width="360" height="auto">
+                        <img src="asset/images/logo.svg" alt="logo" width="360" height="auto">
                     </a>
                 </div>
                 <div class="header-actions">
@@ -81,24 +81,28 @@
 
                     <div class="card-title mb-3 subheading-form">Clinic Information</div>
 
-                    <div class="form-group">
-                        <label class="label">Clinic name</label>
-                        <input type="text" class="input" value="BPC">
+                    <div class="form-row  col-md-12">
+                        <div class="form-group col-md-6">
+                            <label class="label">Clinic name</label>
+                            <input type="text" class="input" value="BPC">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="label">Clinic address</label>
+                            <input type="text" class="input" placeholder="Clinic address">
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="label">Clinic address</label>
-                        <input type="text" class="input" placeholder="Clinic address">
-                    </div>
+                    <div class="form-row">
 
-                    <div class="form-group">
-                        <label class="label">Clinic Email Address</label>
-                        <input type="email" class="input" value="BPC">
-                    </div>
+                        <div class="form-group">
+                            <label class="label">Clinic Email Address</label>
+                            <input type="email" class="input" value="BPC">
+                        </div>
 
-                    <div class="form-group">
-                        <label class="label">Clinic telephone number</label>
-                        <input type="tel" class="input" value="BPC">
+                        <div class="form-group">
+                            <label class="label">Clinic telephone number</label>
+                            <input type="tel" class="input" value="BPC">
+                        </div>
                     </div>
 
                     <button class="button-update-clinic m-auto">Update Clinic</button>
@@ -140,7 +144,16 @@
                                 <a href="#" class="action-link action-delete">Delete</a>
                             </div>
                         </div>
-                      
+                        <div class="table-row">
+                            <div class="table-cell">Smith Will</div>
+                            <div class="table-cell">smith@tooli.com</div>
+                            <div class="table-cell">Allocator</div>
+                            <div class="table-actions">
+                                <a href="#" class="action-link action-permissions">Permissions</a>
+                                <a href="#" class="action-link action-edit">Edit</a>
+                                <a href="#" class="action-link action-delete">Delete</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -149,39 +162,43 @@
 
             <div class="right-column">
                 <!-- Plan-Specific Details Card -->
-                <div class="custom-card custom-pb-5">
+                <div class="custom-card custom-pb-5 flex-wrap-nowrap">
                     <div class="card-title mb-3 subheading-form">Plan-Specific Details</div>
+                    <div class="form-row col-md-12 col-sm-12 col-lg-12">
 
-                    <div class="form-group">
-                        <label class="label">HaloGUID</label>
-                        <input type="text" class="input" value="65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                            <label class="label">HaloGUID</label>
+                            <input type="text" class="input" value="65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
+                        </div>
+
+                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                            <label class="label">Input Path</label>
+                            <input type="text" class="input" value="\\65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
+                        </div>
                     </div>
+                    <div class="form-row col-md-12 col-sm-12 col-lg-12">
 
-                    <div class="form-group">
-                        <label class="label">Input Path</label>
-                        <input type="text" class="input" value="\\65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
-                    </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                            <label class="label">Output Path</label>
+                            <input type="text" class="input" value="\\65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
+                        </div>
 
-                    <div class="form-group">
-                        <label class="label">Output Path</label>
-                        <input type="text" class="input" value="\\65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="label">HL7 Path</label>
-                        <input type="text" class="input" value="\\65a4f65a\\465asd4f65a1sd6f\54asd4f654as6df">
+                        <div class="form-groupcol-lg-6 col-md-6 col-sm-6">
+                            <label class="label">HL7 Path</label>
+                            <input type="text" class="input" value="\\65a4f65a\\465asd4f65a1sd6f\54asd4f654as6df">
+                        </div>
                     </div>
 
                     <div class="form-row col-md-12 col-12 justify-content-between">
-                        <div class="form-field col-4">
+                        <div class="form-field col-12 col-sm-6 col-md-4">
                             <label class="label">Principle Doctor First Name</label>
                             <input type="text" class="input" value="Jasendra">
                         </div>
-                        <div class="form-field col-4">
+                        <div class="form-field col-12 col-sm-6 col-md-4">
                             <label class="label">Principle Doctor Last Name</label>
                             <input type="text" class="input" value="Aranbepoola">
                         </div>
-                        <div class="form-group col-3">
+                        <div class="form-group col-12 col-sm-6 col-md-3">
                             <label class="label">Max Pages</label>
                             <input type="number" class="input" value="3">
                         </div>
@@ -195,7 +212,7 @@
                 </div>
 
                 <!-- Semi-Processing Card -->
-                <div class="custom-card mb-1">
+                <div class="custom-card mb-1 custom_padding_enable_card">
                     <div class="checkbox-container justify-content-start">
                         <input type="checkbox" class="checkbox" id="semiProcessing">
                         <label for="semiProcessing" class="checkbox-label">Enable Semi-Processing</label>

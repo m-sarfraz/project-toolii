@@ -89,6 +89,8 @@
 .main_content_wrapper {
   gap: 120px;
   align-items: center;
+  margin-top: 2.5em;
+  padding-top: 3em;
 }
 @media (max-width: 1190px) {
   .heading {

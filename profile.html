@@ -26,7 +26,7 @@
             <div class="header-container">
                 <div class="logo-section">
                     <a href="/" class="logo">
-                        <img src="/asset/images/logo.svg" alt="logo" width="360" height="auto">
+                        <img src="asset/images/logo.svg" alt="logo" width="360" height="auto">
                     </a>
                 </div>
                 <div class="header-actions">
@@ -53,21 +53,22 @@
                         <h2 class="section-title mb-3">Profile Information</h2>
 
                         <form class="profile-form">
-                            <div class="form-group">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" id="name" class="form-input" value="Aymara" readonly>
-                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" class="form-input" value="Aymara" readonly>
+                                </div>
 
-                            <div class="form-group">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" id="email" class="form-input" value="aymara@email.com" readonly>
-                            </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" class="form-input" value="aymara@email.com" readonly>
+                                </div>
 
-                            <div class="form-group">
-                                <label for="company" class="form-label">Company / Clinic</label>
-                                <input type="text" id="company" class="form-input" value="132" readonly>
+                                <div class="form-group">
+                                    <label for="company" class="form-label">Company / Clinic</label>
+                                    <input type="text" id="company" class="form-input" value="132" readonly>
+                                </div>
                             </div>
-
                             <div class="form-row">
                                 <div class="form-group form-group-half">
                                     <label for="abn" class="form-label">ABN</label>
@@ -103,9 +104,11 @@
 
                 <div class="profile-sidebar">
                     <div class="two-factor-card">
-                        <h2 class="section-title">Two-Factor Authentication</h2>
-                        <div class="warning-message">
-                            <p>Two - factor authentication is currently disabled.</p>
+                        <div class="d-flex flex-row enable_auth_header justify-space-bewteen">
+                            <h2 class="section-title">Two-Factor Authentication</h2>
+                            <div class="warning-message">
+                                <p>Two - factor authentication is currently disabled.</p>
+                            </div>
                         </div>
                         <button type="button" class="js-enable-auth btn-primary btn-enable-2fa" data-bs-toggle="modal"
                             data-bs-target="#addUserModal">Enable Two-Factor
@@ -121,15 +124,18 @@
                                     readonly>
                             </div>
 
-                            <div class="form-group">
-                                <label for="new-password" class="form-label">New Password</label>
-                                <input type="password" id="new-password" class="form-input" value="*******" readonly>
-                            </div>
+                            <div class="form-row">
+                                <div class="form-group form-group-half">
+                                    <label for="new-password" class="form-label">New Password</label>
+                                    <input type="password" id="new-password" class="form-input" value="*******"
+                                        readonly>
+                                </div>
 
-                            <div class="form-group">
-                                <label for="confirm-password" class="form-label">Confirm Password</label>
-                                <input type="password" id="confirm-password" class="form-input" value="*******"
-                                    readonly>
+                                <div class="form-group">
+                                    <label for="confirm-password" class="form-label">Confirm Password</label>
+                                    <input type="password" id="confirm-password" class="form-input" value="*******"
+                                        readonly>
+                                </div>
                             </div>
 
                             <button type="submit" class="btn-primary btn-save-password">Save</button>
@@ -261,12 +267,6 @@
             setTimeout(() => {
                 $(this).text(buttonText);
             }, 2000);
-        });
-        $(document).on('hidden.bs.modal', function () {
-            $('body').css({
-                'transform': 'scale(0.92)',
-                'transform-origin': 'top center',
-            });
         });
 
     });
