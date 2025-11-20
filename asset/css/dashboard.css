@@ -94,7 +94,7 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 30px;
   line-height: 58px;
   color: #171840;
 }
@@ -229,16 +229,16 @@ body {
 }
 
 .chart-card {
-  padding: 0.75rem 3rem 1.25rem;
+  padding: 1em;
   margin: auto 0;
   background-color: white;
   border-radius: 0.75rem;
   border: 1px solid #e5e7eb;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  min-height: 146px;
-  min-width: 15rem;
-  width: 294px;
+  width: fit-content;
   height: -webkit-fill-available;
+  font-size: 12px;
+  max-width: 175px;
 }
 
 .chart-content {
@@ -1038,10 +1038,6 @@ body {
     padding: 10px;
   }
 
-  .chart-card {
-    width: 100%;
-  }
-
   .main-panel {
     padding: 1.25rem;
   }
@@ -1050,7 +1046,7 @@ body {
   .overview-title,
   .error-logs-title,
   .users-title {
-    font-size: 1em;
+    font-size: 30px;
   }
 
   .metrics-grid {
@@ -1363,5 +1359,15 @@ body {
 @media (max-width: 550px) {
   .metrics-grid {
     flex-direction: column !important  ;
+  }
+  .metric-card,
+  .chart-card {
+    min-width: 100% !important;
+  }
+  .metric-heading > div {
+    width: 100% !important;
+  }
+  .custom-width-text {
+    max-width: 100%;
   }
 }
