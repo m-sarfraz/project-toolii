@@ -188,5 +188,30 @@ $(document).ready(function () {
             console.log("Form valid, submit now.");
         }
     }
+    $(document).ready(function () {
+        $(".toggle-sidebar").on("click", function () {
+            // Sidebar toggle
+            if ($(".sidebar").is(":visible")) {
+                $(".sidebar").hide();
+            } else {
+                $(".sidebar").css("display", "flex");
+            }
 
+
+            // Arrow rotation
+            if ($(".arrow").hasClass("rotate-icon")) {
+                $(".arrow").removeClass("rotate-icon");
+            } else {
+                $(".arrow").addClass("rotate-icon");
+            }
+
+            // Button position adjustment
+            if ($(".toggle-sidebar").hasClass("left-36")) {
+                $(".toggle-sidebar").removeClass("left-36");
+            } else {
+                $(".toggle-sidebar").addClass("left-36");
+            }
+        });
+
+    });
 });

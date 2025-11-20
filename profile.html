@@ -11,7 +11,7 @@
     <meta property="og:description" content="Toolii Automates Medical Uploading.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tooli-project.netlify.app/">
-    <meta property="og:image" content="https://tooli-project.netlify.app/assets/image/avatar-main.svg">
+    <meta property="og:image" content="https://tooli-project.netlify.app/asset/image/avatar-main.svg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <link rel="stylesheet" href="asset/css/global.css">
@@ -41,8 +41,51 @@
     </header>
 
 
-    <div class="main_profile_wrapper">
+
+    <div class="main_profile_wrapper d-flex">
+
+        <div class="sidebar flex-column justify-content-between">
+            <!-- Top Menu -->
+            <div class="d-flex flex-column top_menu">
+                <div class="menu-item d-flex align-items-center">
+                    <img src="asset/images/allocate.svg" alt="Allocate">
+                    <span>Allocate</span>
+                </div>
+
+                <a class="menu-item d-flex align-items-center" href="dashboard.html">
+                    <img src="asset/images/dashboard.svg" alt="Dashboard">
+                    <span>Dashboard</span>
+                </a>
+
+                <div class="menu-item d-flex align-items-center">
+                    <img src="asset/images/reports.svg" alt="Reports">
+                    <span>Reports</span>
+                </div>
+
+                <div class="menu-item d-flex align-items-center">
+                    <img src="asset/images/suite.svg" alt="Suite">
+                    <span>Suite</span>
+                </div>
+            </div>
+
+            <!-- Bottom Menu -->
+            <div class="d-flex flex-column gap-3">
+                <a class="menu-item d-flex align-items-center" href="security.html">
+                    <img src="asset/images/settings.svg" alt="Settings">
+                    <span>Settings</span>
+                </a>
+
+                <div class="menu-item logout d-flex align-items-center">
+                    <img src="asset/images/logout.svg" alt="Logout">
+                    <span>Logout</span>
+                </div>
+            </div>
+        </div>
+
         <div class="profile-container">
+            <button class="toggle-sidebar">
+                <span class="arrow"> > </span>
+            </button>
             <div class="profile-header">
                 <h1 class="profile-title">Profile Page</h1>
             </div>
@@ -245,7 +288,6 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="./asset/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
 </script>
