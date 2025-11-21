@@ -74,6 +74,12 @@ button {
   height: calc(100vh - 100px);
   position: fixed;
   top: 85px;
+  left: 0;
+}
+
+.security-container {
+  width: calc(100% - 98px);
+  margin-left: auto;
 }
 
 .menu-item {
