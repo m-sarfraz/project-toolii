@@ -117,63 +117,86 @@ button {
 
 /* Toggle button styling */
 .toggle-sidebar {
-  position: absolute;
-  top: 50px;
-  left: -5px;
-  width: 45px;
-  height: 45px;
-  background: transparent;
-  border: none;
+  position: fixed;
+  top: 50%;
+  left: 86px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #a495ff 0%, #8b5cf6 100%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  transition: transform 0.3s ease;
+  z-index: 1001;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3), 0 0 0 0 rgba(139, 92, 246, 0.4);
+  outline: none;
 }
 
-.arrow-btn {
-  background-color: rgba(0, 0, 0, 0.5);
-  /* transparent black */
-  border: none;
-  /* remove default border */
-  color: white;
-  /* arrow color */
-  font-size: 24px;
-  /* adjust arrow size */
-  padding: 10px 15px;
-  /* button size */
-  border-radius: 6px;
-  /* rounded corners */
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+.toggle-sidebar:hover {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.5), 0 0 0 4px rgba(139, 92, 246, 0.1);
+  transform: translateY(-50%) scale(1.1);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
-.left-36 {
-  left: 3em;
+.toggle-sidebar:active {
+  transform: translateY(-50%) scale(0.95);
+  box-shadow: 0 2px 6px rgba(139, 92, 246, 0.4);
 }
 
-.arrow-btn:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  /* slightly darker on hover */
-  transform: rotate(90deg);
-  /* optional rotation effect */
+.toggle-sidebar:focus {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3), 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+/* When sidebar is closed, move toggle button */
+.sidebar.closed ~ .toggle-sidebar,
+.toggle-sidebar.sidebar-closed {
+  left: 0;
+}
+
+.sidebar.closed ~ .toggle-sidebar:hover,
+.toggle-sidebar.sidebar-closed:hover {
+  left: 0;
 }
 
 /* Arrow styling */
 .toggle-sidebar .arrow {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 6px 15px;
-  border-radius: 3px;
-  color: white;
-  transition: transform 0.3s ease;
-  font-weight: bold;
-  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* When sidebar is open, rotate arrow */
-.rotate-icon {
-  /* transform: rotate(180deg); */
+.toggle-sidebar .arrow svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  stroke: white;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+/* When sidebar is closed, rotate arrow */
+.sidebar.closed ~ .toggle-sidebar .arrow svg,
+.toggle-sidebar.sidebar-closed .arrow svg {
+  transform: rotate(180deg);
+}
+
+/* Smooth sidebar transition */
+.sidebar {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+  opacity: 0;
 }
 
 .top_menu {
@@ -1026,6 +1049,18 @@ button {
 @media (max-width: 992px) {
   .toggle-sidebar {
     display: flex;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .sidebar.closed ~ .toggle-sidebar,
+  .toggle-sidebar.sidebar-closed {
+    left: 0;
+  }
+
+  .sidebar.active ~ .toggle-sidebar {
+    left: 86px;
   }
 
   .signup-illustration {
@@ -1045,17 +1080,21 @@ button {
   }
 
   .sidebar {
-    display: none;
-    position: absolute;
-    top: 10px;
-    left: -20px;
-    width: 100px;
-    transition: left 0.3s ease;
-    z-index: 999;
+    display: flex;
+    position: fixed;
+    top: 85px;
+    left: -100%;
+    width: 86px;
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
   }
 
   .sidebar.active {
     left: 0;
+  }
+
+  .sidebar.closed {
+    left: -100%;
   }
 }
 

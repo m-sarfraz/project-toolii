@@ -214,26 +214,18 @@ $(document).ready(function () {
     }
     $(document).ready(function () {
         $(".toggle-sidebar").on("click", function () {
-            // Sidebar toggle
-            if ($(".sidebar").is(":visible")) {
-                $(".sidebar").hide();
+            const $sidebar = $(".sidebar");
+            const $toggleButton = $(this);
+            
+            // Toggle sidebar classes for smooth transitions
+            if ($sidebar.hasClass("closed")) {
+                $sidebar.removeClass("closed");
+                $sidebar.addClass("active");
+                $toggleButton.removeClass("sidebar-closed");
             } else {
-                $(".sidebar").css("display", "flex");
-            }
-
-
-            // Arrow rotation
-            if ($(".arrow").hasClass("rotate-icon")) {
-                $(".arrow").removeClass("rotate-icon");
-            } else {
-                $(".arrow").addClass("rotate-icon");
-            }
-
-            // Button position adjustment
-            if ($(".toggle-sidebar").hasClass("left-36")) {
-                $(".toggle-sidebar").removeClass("left-36");
-            } else {
-                $(".toggle-sidebar").addClass("left-36");
+                $sidebar.addClass("closed");
+                $sidebar.removeClass("active");
+                $toggleButton.addClass("sidebar-closed");
             }
         });
 
