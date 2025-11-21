@@ -63,7 +63,7 @@ body {
 }
 
 .main-panel {
-  flex: 1;
+  /* flex: 1; */
   flex-shrink: 1;
   padding: 1rem 1.25rem;
   margin: auto 0;
@@ -72,6 +72,8 @@ body {
   border-radius: 1rem;
   box-shadow: 0px 4px 16px rgba(215, 207, 243, 1);
   min-width: 15rem;
+  width: calc(100% - 98px);
+  margin-left: auto;
 }
 
 .welcome-section {
@@ -125,7 +127,7 @@ body {
   flex: 1;
 }
 
-.metric-heading > div {
+.metric-heading>div {
   width: 85px;
   height: 40px;
   font-family: "Inter";
@@ -1037,6 +1039,7 @@ body {
   .left-36 {
     left: 5em !important;
   }
+
   .header-container {
     padding: 0 1.25rem;
   }
@@ -1382,7 +1385,7 @@ body {
     min-width: 100% !important;
   }
 
-  .metric-heading > div {
+  .metric-heading>div {
     width: 100% !important;
   }
 
