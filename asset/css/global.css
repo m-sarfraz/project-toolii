@@ -153,15 +153,25 @@ button {
   box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3), 0 0 0 3px rgba(139, 92, 246, 0.2);
 }
 
-/* When sidebar is closed, move toggle button */
-.sidebar.closed ~ .toggle-sidebar,
-.toggle-sidebar.sidebar-closed {
-  left: 0;
+/* When sidebar is closed, move toggle button - only on mobile */
+@media (max-width: 992px) {
+  .sidebar.closed ~ .toggle-sidebar,
+  .toggle-sidebar.sidebar-closed {
+    left: 0;
+  }
+
+  .sidebar.closed ~ .toggle-sidebar:hover,
+  .toggle-sidebar.sidebar-closed:hover {
+    left: 0;
+  }
 }
 
-.sidebar.closed ~ .toggle-sidebar:hover,
-.toggle-sidebar.sidebar-closed:hover {
-  left: 0;
+/* On desktop, keep toggle button position even when sidebar is "closed" */
+@media (min-width: 993px) {
+  .sidebar.closed ~ .toggle-sidebar,
+  .toggle-sidebar.sidebar-closed {
+    left: 86px;
+  }
 }
 
 /* Arrow styling */
@@ -194,9 +204,19 @@ button {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sidebar.closed {
-  transform: translateX(-100%);
-  opacity: 0;
+/* On desktop, sidebar.closed should not hide the sidebar - only on mobile */
+@media (min-width: 993px) {
+  .sidebar.closed {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar.closed {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 }
 
 .top_menu {

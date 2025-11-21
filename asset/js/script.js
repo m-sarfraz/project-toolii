@@ -20,214 +20,239 @@ var colorThemes = {
 };
 
 $(document).ready(function () {
+  // ==========================
+  // Remember Me Checkbox
+  // ==========================
+  let rememberMeChecked = true; // Default checked as per design
 
+  const $rememberCheckbox = $("#rememberCheckbox");
+  const $rememberCheckboxFilled = $rememberCheckbox.find(".checkbox-filled");
 
-
-    // ==========================
-    // Remember Me Checkbox
-    // ==========================
-    let rememberMeChecked = true; // Default checked as per design
-
-    const $rememberCheckbox = $('#rememberCheckbox');
-    const $rememberCheckboxFilled = $rememberCheckbox.find('.checkbox-filled');
-
-    $rememberCheckbox.on('click', function () {
-        rememberMeChecked = !rememberMeChecked;
-        updateRememberCheckbox();
-    });
-
-    function updateRememberCheckbox() {
-        if (rememberMeChecked) {
-            $rememberCheckboxFilled.removeClass('unchecked');
-        } else {
-            $rememberCheckboxFilled.addClass('unchecked');
-        }
-    }
-
-    // ==========================
-    // Robot Checkbox
-    // ==========================
-    let robotChecked = true;
-
-    const $robotCheckbox = $('#robotCheckbox');
-    const $robotCheckboxCheck = $robotCheckbox.find('.checkbox-check');
-
-    $robotCheckbox.on('click', function () {
-        robotChecked = !robotChecked;
-        updateRobotCheckbox();
-    });
-
-    function updateRobotCheckbox() {
-        if (robotChecked) {
-            $robotCheckboxCheck.css('display', 'flex');
-        } else {
-            $robotCheckboxCheck.css('display', 'flex');
-        }
-    }
-
-
-
-
-    function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-
-    // ==========================
-    // Google Sign-In Button
-    // ==========================
-    $('.google-button').on('click', function () {
-        alert('Google Sign In clicked - integrate with Google OAuth');
-    });
-
-    // ==========================
-    // Forgot Password Button
-    // ==========================
-    $('.forgot-password').on('click', function () {
-        alert('Forgot password clicked - redirect to password reset page');
-    });
-
-    // ==========================
-    // Create Account Link
-    // ==========================
-    // $('.create-account-link').on('click', function () {
-    //     alert('Create account clicked - redirect to sign up page');
-    // });
-
-
-    // ==========================
-    // Input Field Focus Effects
-    // ==========================
-    $('.input-field input').on('focus', function () {
-        $(this).parent().css({
-            'border-color': '#A855F7',
-            'box-shadow': '0 0 0 3px rgba(168, 85, 247, 0.1)'
-        });
-    });
-
-    $('.input-field input').on('blur', function () {
-        $(this).parent().css({
-            'border-color': '#D4D4D8',
-            'box-shadow': '0 1px 2px 0 rgba(0, 0, 0, 0.05)'
-        });
-    });
-
-    // ==========================
-    // Initialize States
-    // ==========================
+  $rememberCheckbox.on("click", function () {
+    rememberMeChecked = !rememberMeChecked;
     updateRememberCheckbox();
+  });
+
+  function updateRememberCheckbox() {
+    if (rememberMeChecked) {
+      $rememberCheckboxFilled.removeClass("unchecked");
+    } else {
+      $rememberCheckboxFilled.addClass("unchecked");
+    }
+  }
+
+  // ==========================
+  // Robot Checkbox
+  // ==========================
+  let robotChecked = true;
+
+  const $robotCheckbox = $("#robotCheckbox");
+  const $robotCheckboxCheck = $robotCheckbox.find(".checkbox-check");
+
+  $robotCheckbox.on("click", function () {
+    robotChecked = !robotChecked;
     updateRobotCheckbox();
+  });
 
+  function updateRobotCheckbox() {
+    if (robotChecked) {
+      $robotCheckboxCheck.css("display", "flex");
+    } else {
+      $robotCheckboxCheck.css("display", "flex");
+    }
+  }
 
-    // check empty inputs oin form submit 
-    // ==========================
-    // Form Submission
-    // ==========================
-    const $signupForm = $('#signupForm');
-    const $signUpButton = $("#signUpButton")
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
 
-    $signupForm.on('submit', function (e) {
-        e.preventDefault();
-        handleSignUp(e);
+  // ==========================
+  // Google Sign-In Button
+  // ==========================
+  $(".google-button").on("click", function () {
+    alert("Google Sign In clicked - integrate with Google OAuth");
+  });
+
+  // ==========================
+  // Forgot Password Button
+  // ==========================
+  $(".forgot-password").on("click", function () {
+    alert("Forgot password clicked - redirect to password reset page");
+  });
+
+  // ==========================
+  // Create Account Link
+  // ==========================
+  // $('.create-account-link').on('click', function () {
+  //     alert('Create account clicked - redirect to sign up page');
+  // });
+
+  // ==========================
+  // Input Field Focus Effects
+  // ==========================
+  $(".input-field input").on("focus", function () {
+    $(this).parent().css({
+      "border-color": "#A855F7",
+      "box-shadow": "0 0 0 3px rgba(168, 85, 247, 0.1)",
     });
+  });
 
-    $signUpButton.on('click', function (e) {
-        e.preventDefault();
-        handleSignUp(e);
+  $(".input-field input").on("blur", function () {
+    $(this).parent().css({
+      "border-color": "#D4D4D8",
+      "box-shadow": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
     });
-    const handleSignUp = (e) => {
-        e.preventDefault(); // stop page reload
+  });
 
-        let hasError = false;
-        // Simulate sign-in process
-        $signUpButton.text('Signing Up...').prop('disabled', true);
+  // ==========================
+  // Initialize States
+  // ==========================
+  updateRememberCheckbox();
+  updateRobotCheckbox();
 
-        setTimeout(function () {
-            $signUpButton.text('Sign Up').prop('disabled', false);
-        }, 2000);
-        // Clear old errors
-        $(".signUp-error-message").text("");
+  // check empty inputs oin form submit
+  // ==========================
+  // Form Submission
+  // ==========================
+  const $signupForm = $("#signupForm");
+  const $signUpButton = $("#signUpButton");
 
-        $(this).find("input").each(function () {
-            let value = $(this).val().trim();
-            let errorSpan = $(this).parent().siblings(".signUp-error-message");
-            console.log(errorSpan);
+  $signupForm.on("submit", function (e) {
+    e.preventDefault();
+    handleSignUp(e);
+  });
 
-            if (value === "") {
-                hasError = true;
-                let fieldName = $(this).attr("placeholder") || $(this).attr("name");
-                errorSpan.text(fieldName + " is required");
-            }
-        });
+  $signUpButton.on("click", function (e) {
+    e.preventDefault();
+    handleSignUp(e);
+  });
+  const handleSignUp = (e) => {
+    e.preventDefault(); // stop page reload
 
-        if (!hasError) {
-            console.log("Form valid, submit now.");
+    let hasError = false;
+    // Simulate sign-in process
+    $signUpButton.text("Signing Up...").prop("disabled", true);
+
+    setTimeout(function () {
+      $signUpButton.text("Sign Up").prop("disabled", false);
+    }, 2000);
+    // Clear old errors
+    $(".signUp-error-message").text("");
+
+    $(this)
+      .find("input")
+      .each(function () {
+        let value = $(this).val().trim();
+        let errorSpan = $(this).parent().siblings(".signUp-error-message");
+        console.log(errorSpan);
+
+        if (value === "") {
+          hasError = true;
+          let fieldName = $(this).attr("placeholder") || $(this).attr("name");
+          errorSpan.text(fieldName + " is required");
         }
+      });
+
+    if (!hasError) {
+      console.log("Form valid, submit now.");
+    }
+  };
+
+  const $signInForm = $("#signinForm");
+  const $signInButton = $("#signinButton");
+
+  $signInForm.on("submit", function (e) {
+    console.log("1");
+
+    e.preventDefault();
+    handleSignIn(e);
+  });
+
+  $signInButton.on("click", function (e) {
+    console.log("2");
+    e.preventDefault();
+    handleSignIn(e);
+  });
+  const handleSignIn = (e) => {
+    e.preventDefault(); // stop page reload
+    let hasError = false;
+    // Simulate sign-in process
+    $signInButton.text("Signing In...").prop("disabled", true);
+    setTimeout(function () {
+      $signInButton.text("Sign In").prop("disabled", false);
+    }, 2000);
+    // Clear old errors
+    $(".signIn-error-message").text("");
+    $(this)
+      .find("input")
+      .each(function () {
+        console.log("111111");
+
+        let value = $(this).val().trim();
+        let errorSpan = $(this)
+          .closest(".input-field")
+          .next(".signIn-error-message");
+
+        if (value === "") {
+          hasError = true;
+          let fieldName = $(this).attr("placeholder") || $(this).attr("name");
+          console.log(fieldName);
+          errorSpan.text(fieldName + " is required");
+        }
+      });
+
+    if (!hasError) {
+      console.log("Form valid, submit now.");
+    }
+  };
+  $(document).ready(function () {
+    // Initialize sidebar state based on screen size
+    const $sidebar = $(".sidebar");
+    const $toggleButton = $(".toggle-sidebar");
+
+    function initializeSidebar() {
+      const isMobile = window.innerWidth <= 992;
+
+      if (isMobile) {
+        // On mobile: sidebar should be closed by default
+        if (!$sidebar.hasClass("active") && !$sidebar.hasClass("closed")) {
+          $sidebar.addClass("closed");
+          $toggleButton.addClass("sidebar-closed");
+        }
+      } else {
+        // On desktop: sidebar should be visible by default
+        $sidebar.removeClass("closed");
+        $sidebar.addClass("active");
+        $toggleButton.removeClass("sidebar-closed");
+      }
     }
 
+    // Initialize on page load
+    initializeSidebar();
 
-
-
-
-    const $signInForm = $('#signinForm');
-    const $signInButton = $("#signinButton");
-
-    $signInForm.on('submit', function (e) {
-        console.log('1');
-
-        e.preventDefault();
-        handleSignIn(e);
+    // Re-initialize on window resize
+    $(window).on("resize", function () {
+      initializeSidebar();
     });
 
-    $signInButton.on('click', function (e) {
-        console.log('2');
-        e.preventDefault();
-        handleSignIn(e);
+    $(".toggle-sidebar").on("click", function (e) {
+      e.preventDefault();
+      const $sidebar = $(".sidebar");
+      const $toggleButton = $(this);
+
+      // Toggle sidebar: if closed, open it; if active/open, close it
+      if ($sidebar.hasClass("closed")) {
+        // Open sidebar - remove closed class and add active
+        $sidebar.removeClass("closed");
+        $sidebar.addClass("active");
+        $toggleButton.removeClass("sidebar-closed");
+      } else {
+        // Close sidebar - remove active class and add closed
+        $sidebar.removeClass("active");
+        $sidebar.addClass("closed");
+        $toggleButton.addClass("sidebar-closed");
+      }
     });
-    const handleSignIn = (e) => {
-        e.preventDefault(); // stop page reload
-        let hasError = false;
-        // Simulate sign-in process
-        $signInButton.text('Signing In...').prop('disabled', true);
-        setTimeout(function () {
-            $signInButton.text('Sign In').prop('disabled', false);
-        }, 2000);
-        // Clear old errors
-        $(".signIn-error-message").text("");
-        $(this).find("input").each(function () {
-            console.log('111111');
-
-            let value = $(this).val().trim();
-            let errorSpan = $(this).closest('.input-field').next(".signIn-error-message");
-
-            if (value === "") {
-                hasError = true;
-                let fieldName = $(this).attr("placeholder") || $(this).attr("name");
-                console.log(fieldName);
-                errorSpan.text(fieldName + " is required");
-            }
-        });
-
-        if (!hasError) {
-            console.log("Form valid, submit now.");
-        }
-    }
-    $(document).ready(function () {
-        $(".toggle-sidebar").on("click", function () {
-            const $sidebar = $(".sidebar");
-            const $toggleButton = $(this);
-            
-            // Toggle sidebar classes for smooth transitions
-            if ($sidebar.hasClass("closed")) {
-                $sidebar.removeClass("closed");
-                $sidebar.addClass("active");
-                $toggleButton.removeClass("sidebar-closed");
-            } else {
-                $sidebar.addClass("closed");
-                $sidebar.removeClass("active");
-                $toggleButton.addClass("sidebar-closed");
-            }
-        });
-
-    });
+  });
 });
