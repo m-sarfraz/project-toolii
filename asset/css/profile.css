@@ -7,6 +7,12 @@
   gap: 10px;
 }
 
+@media (max-width: 992px) {
+  .main_profile_wrapper {
+    width: 100%;
+  }
+}
+
 .profile-container {
   width: 100%;
   background-color: #fef8ff;

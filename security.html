@@ -366,33 +366,7 @@
 <script>
     $(document).ready(function () {
         // Color theme configurations
-        const colorThemes = {
-            violet: {
-                primary: '#a855f7',
-                primaryLight: '#c084fc',
-                primaryBg: '#fdf4ff',
-                primaryShadow: 'rgba(204, 189, 255, 1)'
-            },
-            emerald: {
-                primary: '#059669',
-                primaryLight: '#34d399',
-                primaryBg: '#ecfdf5',
-                primaryShadow: 'rgba(167, 243, 208, 1)'
-            },
-            blue: {
-                primary: '#2563eb',
-                primaryLight: '#60a5fa',
-                primaryBg: '#eff6ff',
-                primaryShadow: 'rgba(147, 197, 253, 1)'
-            },
-            fuchsia: {
-                primary: '#c026d3',
-                primaryLight: '#e879f9',
-                primaryBg: '#fdf4ff',
-                primaryShadow: 'rgba(245, 208, 254, 1)'
-            }
-        };
-
+    
         // Function to update CSS custom properties
         function updateTheme(theme) {
             const root = document.documentElement;
@@ -407,6 +381,7 @@
         // Color circle click handlers
         $('.color-circle').on('click', function () {
             const color = $(this).data('color');
+            localStorage.setItem('selected_color', color);
             updateTheme(color);
 
             // Add visual feedback

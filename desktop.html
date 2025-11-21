@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +18,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-    
+
 </head>
+
 <body>
     <div class="main-container">
         <!-- Header Section -->
@@ -26,7 +28,7 @@
             <div class="header-container">
                 <div class="header-left">
                     <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/69ede5898535bab42debd46f4ef331e0f793c4ce?placeholderIfAbsent=true"
-                         class="logo" alt="Logo">
+                        class="logo" alt="Logo">
                     <div class="header-title">MEDICAL DOCUMENT UPLOAD</div>
                 </div>
                 <div class="header-right">
@@ -36,7 +38,7 @@
                     <div class="header-actions">
                         <div class="upload-button">
                             <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/efe4360833f02b67b32afda112f69af6de864fda?placeholderIfAbsent=true"
-                                 class="upload-icon" alt="Upload">
+                                class="upload-icon" alt="Upload">
                             <div class="upload-text">Upload document</div>
                         </div>
                     </div>
@@ -47,38 +49,32 @@
         <!-- Main Content Area -->
         <div class="content-wrapper">
             <!-- Sidebar Navigation -->
-            <div class="sidebar">
+            <div class="sidebar" id="js-dynamic-color-1">
                 <div class="navigation">
                     <div class="nav-item">
-                        <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/5b2fb60aed466426e34b4aa37ffe517d400246d5?placeholderIfAbsent=true"
-                             class="nav-icon" alt="Allocate">
+                        <img src="asset/images/allocate.svg" class="nav-icon" alt="Allocate">
                         <div class="nav-text">Allocate</div>
                     </div>
                     <div class="nav-item">
-                        <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/2db85ba41ae2e0205972216a64f247bebe715d04?placeholderIfAbsent=true"
-                             class="nav-icon" alt="Dashboard">
+                        <img src="asset/images/dashboard.svg" class="nav-icon" alt="Dashboard">
                         <div class="nav-text">Dashboard</div>
                     </div>
                     <div class="nav-item">
-                        <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/1d2c44d4293e3c449cb87354cf6f297c0adba387?placeholderIfAbsent=true"
-                             class="nav-icon" alt="Reports">
+                        <img src="asset/images/reports.svg" class="nav-icon" alt="Reports">
                         <div class="nav-text">Reports</div>
                     </div>
                     <div class="nav-item">
-                        <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/edea204396a41a57f0dee8e66496753720de0eda?placeholderIfAbsent=true"
-                             class="nav-icon" alt="Suite">
+                        <img src="asset/images/suite.svg" class="nav-icon" alt="Suite">
                         <div class="nav-text">Suite</div>
                     </div>
                 </div>
                 <div class="sidebar-footer">
                     <div class="settings-section">
-                        <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/a27c714e7811585c8215371d651db3ded57c716a?placeholderIfAbsent=true"
-                             class="settings-bg" alt="Settings Background">
+                        <img src="asset/images/settings.svg" class="settings-bg" alt="Settings Background">
                         <div class="settings-text">Settings</div>
                     </div>
                     <div class="logout-section">
-                        <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/877517328ed671fe5c6f9bd05767fd53ff635097?placeholderIfAbsent=true"
-                             class="logout-icon" alt="Logout">
+                        <img src="asset/images/logout.svg" class="logout-icon" alt="Logout">
                         <div class="logout-text">Logout</div>
                     </div>
                 </div>
@@ -88,12 +84,12 @@
             <div class="main-content">
                 <!-- Document Viewer Section -->
                 <div class="document-viewer">
-                    <div class="document-content">
+                    <div class="document-content" id="js-dynamic-color-2">
                         <div class="document-header">
                             <div class="document-card">
                                 <div class="document-info">
                                     <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/9f0c0ee5045d70ef04d70e48d09915089652ba96?placeholderIfAbsent=true"
-                                         class="document-icon" alt="Document">
+                                        class="document-icon" alt="Document">
                                     <div class="document-details">
                                         <div class="document-title">William_Emma_Reports.pdf</div>
                                         <div class="document-meta">
@@ -117,22 +113,23 @@
                             <div class="validation-panel">
                                 <div class="validation-message">
                                     <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/3b83be76797ad936dce37ee1cdb920cd39116e17?placeholderIfAbsent=true"
-                                         class="validation-icon" alt="Validation">
+                                        class="validation-icon" alt="Validation">
                                     <div class="validation-content">
                                         <div class="validation-title">Document Completely validated!</div>
-                                        <div class="validation-subtitle">Everything is look perfect. your data is valid.</div>
+                                        <div class="validation-subtitle">Everything is look perfect. your data is valid.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="search-controls">
                                     <div class="search-input">
                                         <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/57274afdd1238290026fe0d60710347fbb4f5f8b?placeholderIfAbsent=true"
-                                             class="search-icon" alt="Search">
+                                            class="search-icon" alt="Search">
                                         <div class="search-text">Search</div>
                                         <div class="search-shortcut">⌘K</div>
                                     </div>
                                     <div class="filter-button">
                                         <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/c8d38fb43f8a39e34166bb86d6fcfad0623bc083?placeholderIfAbsent=true"
-                                             class="filter-icon" alt="Filter">
+                                            class="filter-icon" alt="Filter">
                                     </div>
                                 </div>
                             </div>
@@ -141,38 +138,32 @@
                             <div class="preview-controls-left">
                                 <div class="zoom-control">
                                     <div class="zoom-frame">
-                                        <img src="./asset/images/zoom-icon.svg"
-                                        class="tool-icon" alt="Tool">
+                                        <img src="./asset/images/zoom-icon.svg" class="tool-icon" alt="Tool">
                                     </div>
                                     <div class="zoom-percentage">75%</div>
                                     <div class="zoom-frame">
-                                        <img src="./asset/images/zoom-out.svg"
-                                        class="tool-icon" alt="Tool">
+                                        <img src="./asset/images/zoom-out.svg" class="tool-icon" alt="Tool">
                                     </div>
                                 </div>
                                 <div class="tool-button">
-                                    <img src="./asset/images/reset.svg"
-                                         class="tool-icon" alt="Tool">
+                                    <img src="./asset/images/reset.svg" class="tool-icon" alt="Tool">
                                 </div>
                                 <div class="tool-button">
-                                    <img src="./asset/images/full-screen.svg"
-                                    class="tool-icon" alt="Tool">
+                                    <img src="./asset/images/full-screen.svg" class="tool-icon" alt="Tool">
                                 </div>
                                 <div class="tool-button">
-                                    <img src="./asset/images/copies.svg"
-                                    class="tool-icon" alt="Tool">
+                                    <img src="./asset/images/copies.svg" class="tool-icon" alt="Tool">
                                 </div>
                             </div>
-                            <img src="./asset/images/pdf-preview.png"
-                                 class="document-image" alt="Document Preview">
+                            <img src="./asset/images/pdf-preview.png" class="document-image" alt="Document Preview">
                             <div class="preview-controls-right">
                                 <div class="nav-button">
                                     <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/4195eb1b3f9cb64ab588900f981508923a8c1a44?placeholderIfAbsent=true"
-                                         class="nav-icon" alt="Previous">
+                                        class="nav-icon" alt="Previous">
                                 </div>
                                 <div class="nav-button">
                                     <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/0e150d60edd5dea95e024aecd6ab72e1a3ed3050?placeholderIfAbsent=true"
-                                         class="nav-icon" alt="Next">
+                                        class="nav-icon" alt="Next">
                                 </div>
                             </div>
                             <!-- <div class="highlight-overlay-1"></div>
@@ -183,7 +174,7 @@
                 </div>
 
                 <!-- Document List Section -->
-                <div class="document-list">
+                <div class="document-list" id="js-dynamic-color-3">
                     <div class="list-header">
                         <div class="tab-button-one active">Verified</div>
                         <div class="tab-button-two">Review</div>
@@ -193,14 +184,14 @@
                         <div class="list-item">
                             <div class="item-info">
                                 <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/f4642fb4be4c5c5dafa05bfedc6f0dd40e3fd61d?placeholderIfAbsent=true"
-                                     class="file-icon" alt="File">
+                                    class="file-icon" alt="File">
                                 <div class="item-details">
                                     <div class="item-title">Tech requirements.pdf</div>
                                     <div class="item-meta">
                                         <div class="item-author">Jessie Doe</div>
                                         <div class="category-badge">
                                             <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/d754bfd90f9575204d6133293de4f2bae9387a7d?placeholderIfAbsent=true"
-                                                 class="category-icon" alt="Category">
+                                                class="category-icon" alt="Category">
                                             <div class="category-text">Category</div>
                                         </div>
                                         <div class="status-badge verified">Verified</div>
@@ -208,19 +199,19 @@
                                 </div>
                             </div>
                             <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/208628894796438f80f7bd96e3ae8154cd12eb6e?placeholderIfAbsent=true"
-                                 class="action-icon" alt="Actions">
+                                class="action-icon" alt="Actions">
                         </div>
                         <div class="list-item">
                             <div class="item-info">
                                 <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/f4642fb4be4c5c5dafa05bfedc6f0dd40e3fd61d?placeholderIfAbsent=true"
-                                     class="file-icon" alt="File">
+                                    class="file-icon" alt="File">
                                 <div class="item-details">
                                     <div class="item-title">Dashboard screenshot.jpg</div>
                                     <div class="item-meta">
                                         <div class="item-author">Jessie Doe</div>
                                         <div class="category-badge">
                                             <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/d754bfd90f9575204d6133293de4f2bae9387a7d?placeholderIfAbsent=true"
-                                                 class="category-icon" alt="Category">
+                                                class="category-icon" alt="Category">
                                             <div class="category-text">Category</div>
                                         </div>
                                         <div class="status-badge verified">Verified</div>
@@ -228,19 +219,19 @@
                                 </div>
                             </div>
                             <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/208628894796438f80f7bd96e3ae8154cd12eb6e?placeholderIfAbsent=true"
-                                 class="action-icon" alt="Actions">
+                                class="action-icon" alt="Actions">
                         </div>
                         <div class="list-item">
                             <div class="item-info">
                                 <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/f4642fb4be4c5c5dafa05bfedc6f0dd40e3fd61d?placeholderIfAbsent=true"
-                                     class="file-icon" alt="File">
+                                    class="file-icon" alt="File">
                                 <div class="item-details">
                                     <div class="item-title">Dashboard prototype recording.mp4</div>
                                     <div class="item-meta">
                                         <div class="item-author">Jessie Doe</div>
                                         <div class="category-badge">
                                             <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/d754bfd90f9575204d6133293de4f2bae9387a7d?placeholderIfAbsent=true"
-                                                 class="category-icon" alt="Category">
+                                                class="category-icon" alt="Category">
                                             <div class="category-text">Category</div>
                                         </div>
                                         <div class="status-badge verified">Verified</div>
@@ -248,19 +239,19 @@
                                 </div>
                             </div>
                             <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/208628894796438f80f7bd96e3ae8154cd12eb6e?placeholderIfAbsent=true"
-                                 class="action-icon" alt="Actions">
+                                class="action-icon" alt="Actions">
                         </div>
                         <div class="list-item">
                             <div class="item-info">
                                 <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/f4642fb4be4c5c5dafa05bfedc6f0dd40e3fd61d?placeholderIfAbsent=true"
-                                     class="file-icon" alt="File">
+                                    class="file-icon" alt="File">
                                 <div class="item-details">
                                     <div class="item-title">Dashboard prototype FINAL.fig</div>
                                     <div class="item-meta">
                                         <div class="item-author">Jessie Doe</div>
                                         <div class="category-badge">
                                             <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/d754bfd90f9575204d6133293de4f2bae9387a7d?placeholderIfAbsent=true"
-                                                 class="category-icon" alt="Category">
+                                                class="category-icon" alt="Category">
                                             <div class="category-text">Category</div>
                                         </div>
                                         <div class="status-badge processing">Processing</div>
@@ -268,7 +259,7 @@
                                 </div>
                             </div>
                             <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/208628894796438f80f7bd96e3ae8154cd12eb6e?placeholderIfAbsent=true"
-                                 class="action-icon" alt="Actions">
+                                class="action-icon" alt="Actions">
                         </div>
                         <!-- <div class="list-item">
                             <div class="item-info">
@@ -356,7 +347,7 @@
                         <div class="page-select">
                             <div class="page-number">1</div>
                             <img src="https://api.builder.io/api/v1/image/assets/b83732838bca4c5e9039a94048d232b2/4ff3bec25abd95423859d29de9fda009e74ea3df?placeholderIfAbsent=true"
-                                 class="dropdown-icon" alt="Dropdown">
+                                class="dropdown-icon" alt="Dropdown">
                         </div>
                         <div class="page-total">of 10</div>
                     </div>
@@ -365,13 +356,13 @@
                 <!-- Action Buttons Section -->
                 <div class="action-buttons">
                     <div class="button-row">
-                        <div class="action-button secondary">Reset Content</div>
-                        <div class="action-button secondary">C-In</div>
-                        <div class="action-button secondary">Inbox</div>
+                        <div class="action-button secondary dynamic-class-4">Reset Content</div>
+                        <div class="action-button secondary dynamic-class-4">C-In</div>
+                        <div class="action-button secondary dynamic-class-4">Inbox</div>
                     </div>
                     <div class="button-row">
                         <div class="action-button danger">Report Error</div>
-                        <div class="action-button secondary">C-Out</div>
+                        <div class="action-button secondary dynamic-class-4">C-Out</div>
                         <div class="action-button primary">Allocate</div>
                     </div>
                 </div>
@@ -434,4 +425,31 @@
         </div>
     </div>
 </body>
+
 </html>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./asset/js/script.js"></script>
+<script>
+    $(document).ready(function () {
+        const color = localStorage.getItem('selected_color');
+
+        if (color && colorThemes[color]) {
+            const theme = colorThemes[color];
+            console.log(theme);
+
+            // 1st index: primary
+            $('#js-dynamic-color-1').css('background', theme.primary);
+
+            // 2nd index: primaryLight
+            $('#js-dynamic-color-2').css('background', theme.primaryLight);
+
+            // 3rd index: primaryBg
+            $('#js-dynamic-color-3').css('background-color', theme.primaryBg);
+
+            // Last: class dynamic
+            $('.dynamic-class-4').css('background', theme.primaryShadow);
+        }
+    });
+</script>

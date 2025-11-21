@@ -81,7 +81,11 @@ button {
   width: calc(100% - 98px);
   margin-left: auto;
 }
-
+@media (max-width: 992px) {
+  .security-container {
+    width: 100%;
+  }
+}
 .menu-item {
   display: flex;
   flex-direction: column;

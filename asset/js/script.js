@@ -1,4 +1,28 @@
+var colorThemes = {
+    violet: {
+        primary: '#a855f7',
+        primaryLight: '#c78bfb',
+        primaryBg: '#f3e6ff',
+        primaryShadow: '#e4c8ff'
+    },
+    emerald: {
+        primary: '#059669',
+        primaryLight: '#38d9a6',
+        primaryBg: '#e3fff4',
+        primaryShadow: '#c0ffe5'
+    },
+    blue: {
+        primary: '#2563eb',
+        primaryLight: '#5b8bff',
+        primaryBg: '#e8f0ff',
+        primaryShadow: '#cbd9ff'
+    }
+};
+
 $(document).ready(function () {
+
+
+
     // ==========================
     // Remember Me Checkbox
     // ==========================
