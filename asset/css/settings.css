@@ -765,10 +765,10 @@ label {
     overflow-x: auto;
   }
 
-  .sidebar {
+  /* .sidebar {
     left: -20px;
     top: -20px !important;
-  }
+  } */
 
   .left-36 {
     left: 5em;
