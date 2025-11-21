@@ -59,7 +59,7 @@ button {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-height: 60px;
+    min-height: 70px;
 }
 
 .header-container {
@@ -75,9 +75,9 @@ button {
 .header-left {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 14px;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #5eead4;
     min-width: 240px;
@@ -86,7 +86,7 @@ button {
 .logo {
     object-fit: contain;
     aspect-ratio: 4.22;
-    width: 100px;
+    width: 115px;
 }
 
 .header-title {
@@ -107,7 +107,7 @@ button {
     gap: 10px;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 10px 14px;
     height: 100%;
     font-weight: 500;
     color: #111827;
@@ -116,8 +116,8 @@ button {
 }
 
 .progress-text {
-    font-size: 14px;
-    line-height: 1.25;
+    font-size: 13px;
+    line-height: 1.3;
 }
 
 .header-actions {
@@ -134,9 +134,9 @@ button {
     gap: 4px;
     justify-content: center;
     align-items: center;
-    padding: 8px 10px;
+    padding: 10px 12px;
     background-color: #8b5cf6;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
@@ -151,9 +151,9 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 2px;
-    font-size: 14px;
-    line-height: 1.25;
+    padding: 0 3px;
+    font-size: 13px;
+    line-height: 1.3;
     color: white;
 }
 
@@ -173,19 +173,19 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 4px;
-    font-size: 10px;
+    padding: 6px;
+    font-size: 11px;
     font-weight: 600;
     color: white;
     white-space: nowrap;
     background-color: #a78bfa;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #e5e7eb;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     width: 69px;
-    height: calc(100vh - 76px);
+    height: calc(100vh - 86px);
     position: fixed;
-    top: 71px;
+    top: 81px;
     left: 0;
 }
 
@@ -193,7 +193,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 12px 0 8px;
+    padding: 14px 0 10px;
     width: 100%;
 }
 
@@ -203,9 +203,9 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 6px;
-    margin-top: 8px;
-    border-radius: 4px;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 .nav-item:first-child {
@@ -214,15 +214,15 @@ button {
 
 .nav-icon {
     object-fit: contain;
-    width: 24px;
+    width: 26px;
     aspect-ratio: 1;
 }
 
 .nav-text {
-    font-size: 10px;
-    line-height: 1.2;
+    font-size: 11px;
+    line-height: 1.3;
     color: white;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .sidebar-footer {
@@ -303,7 +303,7 @@ button {
     flex: 1;
     width: 100%;
     background-color: #ddd6fe;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #e5e7eb;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
@@ -312,20 +312,20 @@ button {
     display: flex;
     overflow: hidden;
     flex: 1;
-    padding: 8px;
+    padding: 12px;
     border: 1px solid #e5e7eb;
     width: 100%;
-    gap: 12px;
+    gap: 16px;
 }
 
 .document-card {
     display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 24px;
     justify-content: space-between;
-    padding: 8px;
+    padding: 10px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
     flex: 1;
     min-width: 240px;
@@ -333,7 +333,7 @@ button {
 
 .document-info {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
     min-width: 240px;
 }
@@ -341,30 +341,30 @@ button {
 .document-icon {
     object-fit: contain;
     aspect-ratio: 0.67;
-    width: 45px;
+    width: 52px;
 }
 
 .document-details {
-    width: 160px;
+    width: 175px;
 }
 
 .document-title {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.3;
     color: #111827;
 }
 
 .document-meta {
-    margin-top: 2px;
+    margin-top: 3px;
     width: 100%;
-    font-size: 10px;
+    font-size: 11px;
     color: #111827;
 }
 
 .meta-item {
     color: #111827;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .meta-item:first-child {
@@ -373,29 +373,29 @@ button {
 
 .status-row {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     align-items: flex-start;
-    margin-top: 2px;
+    margin-top: 3px;
     max-width: 122px;
     font-weight: 500;
     white-space: nowrap;
 }
 
 .status-label {
-    font-size: 11px;
-    line-height: 1.2;
+    font-size: 12px;
+    line-height: 1.3;
     color: #111827;
 }
 
 .status-badge {
     display: flex;
     align-items: center;
-    padding: 2px 6px;
-    font-size: 10px;
+    padding: 3px 8px;
+    font-size: 11px;
     text-align: center;
     border-radius: 9999px;
     border: 1px solid;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 .status-badge.review {
@@ -421,38 +421,38 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 4px 0;
+    padding: 6px 0;
 }
 
 .priority-indicator {
     display: flex;
     gap: 10px;
     align-items: center;
-    padding: 3px;
-    width: 14px;
-    height: 14px;
+    padding: 4px;
+    width: 16px;
+    height: 16px;
     background-color: rgba(147, 51, 234, 0.1);
     border-radius: 999px;
 }
 
 .priority-dot {
     display: flex;
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: rgba(147, 51, 234, 0.7);
-    min-height: 7px;
+    min-height: 8px;
 }
 
 .upload-date {
-    margin-top: 20px;
-    font-size: 10px;
+    margin-top: 28px;
+    font-size: 11px;
     color: #111827;
 }
 
 .validation-panel {
-    min-width: 200px;
-    width: 280px;
+    min-width: 220px;
+    width: 300px;
     display: flex;
     flex-direction: column;
 }
@@ -460,13 +460,13 @@ button {
 .validation-message {
     display: flex;
     flex: 1;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
-    padding: 8px;
+    padding: 10px;
     color: #111827;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: rgba(244, 244, 245, 0.7);
-    max-width: 280px;
+    max-width: 300px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
     width: 100%;
 }
@@ -474,45 +474,45 @@ button {
 .validation-icon {
     object-fit: contain;
     aspect-ratio: 0.87;
-    width: 11px;
+    width: 13px;
 }
 
 .validation-content {
     flex: 1;
-    min-width: 200px;
+    min-width: 220px;
 }
 
 .validation-title {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.3;
     color: #111827;
 }
 
 .validation-subtitle {
-    margin-top: 2px;
-    font-size: 10px;
+    margin-top: 3px;
+    font-size: 11px;
     color: #111827;
 }
 
 .search-controls {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     align-items: flex-start;
-    margin-top: 8px;
-    max-width: 280px;
-    width: 280px;
+    margin-top: 10px;
+    max-width: 300px;
+    width: 300px;
 }
 
 .search-input {
     display: flex;
     overflow: hidden;
-    gap: 6px;
+    gap: 8px;
     align-items: center;
-    padding: 6px 10px;
+    padding: 8px 12px;
     width: 100%;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #d4d4d8;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     flex: 1;
@@ -521,14 +521,14 @@ button {
 
 .search-icon {
     object-fit: contain;
-    width: 16px;
+    width: 18px;
     aspect-ratio: 1;
 }
 
 .search-text {
     flex: 1;
-    font-size: 12px;
-    line-height: 1.4;
+    font-size: 13px;
+    line-height: 1.5;
     color: #6b7280;
     text-overflow: ellipsis;
 }
@@ -536,11 +536,11 @@ button {
 .search-shortcut {
     display: flex;
     align-items: flex-start;
-    padding: 1px 3px;
-    font-size: 10px;
+    padding: 2px 4px;
+    font-size: 11px;
     font-weight: 500;
     color: #6b7280;
-    border-radius: 3px;
+    border-radius: 4px;
     border: 1px solid #e5e7eb;
 }
 
@@ -549,17 +549,17 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4px;
-    width: 32px;
-    height: 32px;
+    padding: 5px;
+    width: 36px;
+    height: 36px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #e5e7eb;
 }
 
 .filter-icon {
     object-fit: contain;
-    width: 14px;
+    width: 16px;
     aspect-ratio: 1;
 }
 
@@ -570,15 +570,15 @@ button {
     position: relative;
     flex-wrap: wrap;
     flex: 1;
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
     align-items: flex-start;
-    padding: 8px;
-    margin-top: 8px;
+    padding: 10px;
+    margin-top: 10px;
     background-color: #f3f4f6;
-    border-radius: 8px;
+    border-radius: 10px;
     width: 97%;
-    margin: 8px auto;
+    margin: 10px auto;
 }
 
 .preview-controls-left {
@@ -593,47 +593,47 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4px;
-    font-size: 10px;
+    padding: 5px;
+    font-size: 11px;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 1.5;
     color: #374151;
     white-space: nowrap;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #e5e7eb;
 }
 
 .zoom-frame {
     display: flex;
     justify-content: center;
-    padding: 4px 0;
-    width: 20px;
-    height: 20px;
+    padding: 5px 0;
+    width: 22px;
+    height: 22px;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 5px;
     border: 1px solid #d4d4d8;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     aspect-ratio: 1;
-    min-height: 20px;
+    min-height: 22px;
 }
 
 .zoom-percentage {
-    margin-top: 4px;
-    line-height: 1.2;
+    margin-top: 5px;
+    line-height: 1.3;
 }
 
 .tool-button {
     display: flex;
     justify-content: center;
-    gap: 4px;
+    gap: 5px;
     align-items: center;
-    padding: 4px;
-    margin-top: 4px;
-    width: 28px;
-    height: 28px;
+    padding: 5px;
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #e5e7eb;
 }
 
@@ -660,8 +660,8 @@ button {
     object-fit: contain;
     z-index: 0;
     aspect-ratio: 0.69;
-    min-width: 200px;
-    width: 280px;
+    min-width: 220px;
+    width: 320px;
 }
 
 .preview-controls-right {
@@ -669,9 +669,9 @@ button {
     z-index: 0;
     flex-direction: column;
     align-items: center;
-    padding: 4px;
+    padding: 5px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #e5e7eb;
 }
 
@@ -680,14 +680,14 @@ button {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    padding: 4px;
-    width: 20px;
-    height: 20px;
+    padding: 5px;
+    width: 22px;
+    height: 22px;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 5px;
     border: 0.667px solid #d4d4d8;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
 .nav-button:first-child {
@@ -757,11 +757,11 @@ button {
 .list-header {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
     align-items: center;
-    padding: 8px;
+    padding: 10px;
     width: 100%;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1;
     color: white;
     white-space: nowrap;
@@ -773,13 +773,13 @@ button {
     display: flex;
     overflow: hidden;
     flex: 1;
-    gap: 6px;
+    gap: 8px;
     justify-content: center;
     align-items: center;
-    padding: 6px 8px;
-    border-radius: 4px;
+    padding: 8px 10px;
+    border-radius: 6px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    min-height: 28px;
+    min-height: 32px;
     background: linear-gradient(136.85deg, #90DDDF -3.02%, #84BAE4 93.95%);
 }
 
@@ -787,13 +787,13 @@ button {
     display: flex;
     overflow: hidden;
     flex: 1;
-    gap: 6px;
+    gap: 8px;
     justify-content: center;
     align-items: center;
-    padding: 6px 8px;
-    border-radius: 4px;
+    padding: 8px 10px;
+    border-radius: 6px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    min-height: 28px;
+    min-height: 32px;
     background: linear-gradient(135deg, #CFBEFF 0%, #8A76F3 100%);
     box-shadow: 0px 1px 3px 0px #0A0D121A;
 }
@@ -802,13 +802,13 @@ button {
     display: flex;
     overflow: hidden;
     flex: 1;
-    gap: 6px;
+    gap: 8px;
     justify-content: center;
     align-items: center;
-    padding: 6px 8px;
-    border-radius: 4px;
+    padding: 8px 10px;
+    border-radius: 6px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    min-height: 28px;
+    min-height: 32px;
     background: linear-gradient(90deg, #FECCFF 0%, #ED85D6 100%);
 }
 
@@ -827,83 +827,83 @@ button {
 .list-item {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 24px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 16px;
+    padding: 12px 18px;
     width: 100%;
     border-bottom: 1px solid #e5e7eb;
-    min-height: 50px;
+    min-height: 56px;
 }
 
 .item-info {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     align-items: center;
     min-width: 200px;
 }
 
 .file-icon {
     object-fit: contain;
-    width: 32px;
+    width: 36px;
     aspect-ratio: 1;
 }
 
 .item-details {
     min-width: 200px;
-    width: 280px;
+    width: 300px;
 }
 
 .item-title {
-    font-size: 12px;
-    line-height: 1.2;
+    font-size: 13px;
+    line-height: 1.3;
     color: #111827;
 }
 
 .item-meta {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
     width: 100%;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .item-author {
-    font-size: 11px;
-    line-height: 1.2;
+    font-size: 12px;
+    line-height: 1.3;
     color: #4b5563;
-    width: 90px;
+    width: 100px;
 }
 
 .category-badge {
     display: flex;
-    gap: 3px;
+    gap: 4px;
     align-items: center;
-    padding: 2px 5px;
+    padding: 3px 6px;
     text-align: center;
     color: #374151;
     white-space: nowrap;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 5px;
     border: 1px solid #d4d4d8;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .category-icon {
     object-fit: contain;
-    width: 7px;
+    width: 8px;
     aspect-ratio: 1;
 }
 
 .category-text {
-    font-size: 10px;
-    line-height: 1.2;
+    font-size: 11px;
+    line-height: 1.3;
     color: #374151;
 }
 
 .action-icon {
     object-fit: contain;
-    width: 20px;
+    width: 22px;
     aspect-ratio: 1;
 }
 
@@ -912,15 +912,15 @@ button {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
     align-items: center;
     width: 100%;
-    font-size: 10px;
+    font-size: 11px;
     color: #27272a;
-    padding: 8px;
+    padding: 10px;
     background-color: #F7F2FF;
     border-top: 1px solid #e5e7eb;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 10px 10px;
 }
 
 .page-label {
@@ -935,13 +935,13 @@ button {
 
 .page-select {
     display: flex;
-    gap: 4px;
+    gap: 5px;
     align-items: center;
-    padding: 6px 8px;
+    padding: 7px 10px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #d4d4d8;
-    min-height: 26px;
+    min-height: 30px;
 }
 
 .page-number {
@@ -969,10 +969,10 @@ button {
 .button-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .action-button {
@@ -982,12 +982,12 @@ button {
     gap: 4px;
     justify-content: center;
     align-items: center;
-    padding: 8px 8px;
-    border-radius: 6px;
+    padding: 10px 10px;
+    border-radius: 8px;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    font-size: 11px;
-    line-height: 1.2;
+    font-size: 12px;
+    line-height: 1.3;
 }
 
 .action-button.secondary {
@@ -1013,9 +1013,9 @@ button {
     grid-row: 3 / 4;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     align-items: flex-start;
-    font-size: 12px;
+    font-size: 13px;
     color: #6b7280;
 }
 
@@ -1023,8 +1023,8 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 200px;
-    width: 300px;
+    min-width: 220px;
+    width: 320px;
 }
 
 .form-right {
@@ -1032,15 +1032,15 @@ button {
     flex-direction: column;
     flex: 1;
     justify-content: center;
-    min-width: 200px;
+    min-width: 220px;
 }
 
 .form-row {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .form-row:last-child {
@@ -1049,21 +1049,21 @@ button {
 
 .form-field {
     flex: 1;
-    gap: 4px;
+    gap: 5px;
 }
 
 .form-input {
     display: flex;
-    gap: 6px;
+    gap: 8px;
     align-items: center;
-    padding: 6px 10px;
+    padding: 8px 12px;
     width: 100%;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #d4d4d8;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    font-size: 12px;
-    line-height: 1.4;
+    font-size: 13px;
+    line-height: 1.5;
     color: #6b7280;
 }
 
@@ -1075,7 +1075,7 @@ button {
 .vertical-actions {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
     color: white;
     width: 72px;
@@ -1084,19 +1084,19 @@ button {
 .vertical-button {
     display: flex;
     overflow: hidden;
-    gap: 4px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
-    padding: 8px 6px;
+    padding: 10px 8px;
     width: 100%;
     white-space: nowrap;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.1);
-    min-height: 45px;
-    margin-bottom: 8px;
+    min-height: 52px;
+    margin-bottom: 10px;
     background-color: #8b5cf6;
-    font-size: 10px;
-    line-height: 1.2;
+    font-size: 11px;
+    line-height: 1.3;
     text-align: center;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
