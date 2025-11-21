@@ -286,7 +286,7 @@ body {
 }
 
 .overview-card {
-  padding: 0.75rem;
+  padding: 0.6rem;
   width: 100%;
   border-radius: 0.6rem;
   border: 1px solid #e5e7eb;
@@ -296,7 +296,7 @@ body {
 .overview-header {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -331,8 +331,8 @@ body {
 .chart-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 0.75rem;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
   width: 100%;
 }
 
@@ -342,18 +342,19 @@ body {
   flex: 1;
   flex-shrink: 1;
   justify-content: center;
-  padding: 0.6rem;
+  padding: 0.5rem;
   background-color: white;
-  border-radius: 0.75rem;
+  border-radius: 0.6rem;
   flex-basis: 0;
   min-width: 15rem;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
+  height: 310px;
 }
 
 .chart-header {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -361,7 +362,7 @@ body {
 
 .chart-title {
   margin: auto 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #111827;
 }
@@ -390,9 +391,9 @@ body {
 
 .chart-area {
   flex: 1;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   width: 100%;
-  height: 220px;
+  height: 160px;
   position: relative;
 }
 
@@ -403,19 +404,19 @@ body {
 
 .pie-chart-card {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
   align-items: center;
   align-self: flex-start;
-  padding: 0.6rem;
+  padding: 0.5rem;
   width: 11rem;
   background-color: white;
-  border-radius: 0.75rem;
+  border-radius: 0.6rem;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
   height: -webkit-fill-available;
 }
 
 .pie-chart-content {
-  gap: 1rem;
+  gap: 0.6rem;
   margin: auto 0;
   width: 200px;
   margin: auto;
@@ -428,8 +429,8 @@ body {
 }
 
 .pie-legend {
-  gap: 0.25rem;
-  margin-top: 1rem;
+  gap: 0.2rem;
+  margin-top: 0.5rem;
   width: 100%;
 }
 
