@@ -898,7 +898,7 @@ label {
   }
 
   .icon-row {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0px;
     align-items: center;
     justify-content: center;
