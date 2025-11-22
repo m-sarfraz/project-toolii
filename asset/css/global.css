@@ -152,7 +152,9 @@ button {
   outline: none;
   box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3), 0 0 0 3px rgba(139, 92, 246, 0.2);
 }
-
+a{
+  text-decoration: none;
+}
 /* When sidebar is closed, move toggle button - only on mobile */
 @media (max-width: 992px) {
   .sidebar.closed ~ .toggle-sidebar,

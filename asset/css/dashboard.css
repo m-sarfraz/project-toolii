@@ -31,12 +31,7 @@ body {
   min-height: 3.5rem;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  width: 100%;
-}
+ 
 
 .header-logo {
   object-fit: contain;

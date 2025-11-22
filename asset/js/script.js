@@ -1,18 +1,18 @@
 var colorThemes = {
     violet: {
-        primary: "#a855f7",
-        primaryLight: "#cda3fb",   // lighter fade
-        primaryBg: "#eedcff",      // very soft fade
-        primaryShadow: "#d9b8ff"   // mid fade
+        primary: "#A495FF",
+        primaryLight: "#DDD7FF",   // lighter fade
+        primaryBg: "#F7F2FF",      // very soft fade
+        primaryShadow: "#D4C5FE"   // mid fade
     },
     emerald: {
-        primary: "#059669",
+        primary: "#D8EDDE",
         primaryLight: "#42cfa3",   // lighter fade
         primaryBg: "#d9fff2",      // very soft fade
         primaryShadow: "#b9ffe4"   // mid fade
     },
     blue: {
-        primary: "#2563eb",
+        primary: "#A4CFF1",
         primaryLight: "#6c92ff",   // lighter fade
         primaryBg: "#e3ecff",      // very soft fade
         primaryShadow: "#c5d4ff"   // mid fade
