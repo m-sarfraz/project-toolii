@@ -40,7 +40,7 @@ body {
 
 .security-container {
   padding: 10px 1.5em;
-  background-color: #fef8ff;
+  background-color: #fff;
   border-radius: 2rem;
   box-shadow: 0px 4px 16px rgba(215, 207, 243, 1);
   padding-bottom: 0px;
@@ -186,10 +186,10 @@ body.modal-open-disable-scale {
 .custom-card {
   padding: 1em;
   width: 100%;
-  background-color: var(--primary-bg) !important;
+  background-color: white;
   border-radius: 1.5rem !important;
   box-shadow: 0px 4px 20px #ccbdff !important;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem !important;
 }
 
 .custom-card:nth-child(1) {
@@ -265,15 +265,7 @@ label {
   height: 25px;
 }
 
-.form-row {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 10px;
-  align-items: flex-start;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
+ 
 .form-field {
   flex: 1;
   min-width: 15rem;
@@ -288,17 +280,17 @@ label {
   line-height: 20px;
 }
 
-.input {
+.form-control {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  padding: 0.625rem 0.875rem;
+  padding: 0.625rem 0.875rem !important;
   width: 100%;
-  font-size: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  color: #6b7280;
+  font-size: 1rem !important;
+  border-radius: 0.5rem !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  color: #6b7280 !important;
   background-color: var(--white);
   transition: border-color 0.2s ease;
 }
@@ -487,7 +479,7 @@ label {
   width: 100%;
 }
 
-.table-header>.table-cell {
+.table-header > .table-cell {
   border-bottom: 1px solid var(--gray-200);
   font-family: "Inter";
   font-style: normal;
@@ -547,7 +539,7 @@ label {
   border-bottom: 1px solid var(--gray-200);
 }
 
-.table> :not(caption)>*>* {
+.table > :not(caption) > * > * {
   background-color: unset !important;
 }
 

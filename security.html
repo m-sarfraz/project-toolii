@@ -29,13 +29,13 @@
                         <img src="asset/images/logo.svg" alt="logo" width="360" height="auto">
                     </a>
                 </div>
-                <div class="header-actions">
+                <!-- <div class="header-actions">
                     <nav class="navigation">
                         <a href="security.html" class="nav-button">Security</a>
                         <a href="sign-in.html" class="nav-button">Login</a>
                     </nav>
                     <a href="sign-up.html" class="signup-button">Sign Up</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
@@ -80,11 +80,14 @@
 
                 <!-- Bottom Menu -->
                 <div class="d-flex flex-column gap-3">
+                    <a class="menu-item d-flex align-items-center" href="">
+                        <img src="asset/images/bell.png"  alt="NOTIFICATIONS">
+                        <span>Notifications</span>
+                    </a>
                     <a class="menu-item d-flex align-items-center" href="security.html">
                         <img src="asset/images/settings.svg" alt="Settings">
                         <span>Settings</span>
                     </a>
-
                     <div class="menu-item logout d-flex align-items-center cursor-pointer">
                         <a href="profile.html" class="d-flex flex-column" style="text-decoration: none;">
                             <img src="asset/images/logout.svg" alt="Logout">
@@ -94,9 +97,11 @@
                 </div>
             </div>
             <button class="toggle-sidebar">
-                <span class="arrow"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-                  </svg> </span>
+                <span class="arrow"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                    </svg> </span>
             </button>
             <div class="left-column">
                 <!-- Clinic Information Card -->
@@ -124,35 +129,38 @@
 
                     <div class="card-title mb-3 subheading-form">Clinic Information</div>
 
-                    <div class="form-row  col-md-12">
-                        <div class="form-group col-md-6">
+                    <!-- Row 1 -->
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
                             <label class="label">Clinic Name</label>
-                            <input type="text" class="input" value="BPC">
+                            <input type="text" class="form-control" value="BPC">
                         </div>
-                        <div class="form-group col-md-6">
+
+                        <div class="col-md-6 mb-3">
                             <label class="label">Clinic Address</label>
-                            <input type="text" class="input" placeholder="Clinic address">
+                            <input type="text" class="form-control" placeholder="Clinic address">
                         </div>
                     </div>
 
-                    <div class="form-row">
-
-                        <div class="form-group">
+                    <!-- Row 2 -->
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
                             <label class="label">Clinic Email Address</label>
-                            <input type="email" class="input" value="BPC">
+                            <input type="email" class="form-control" value="BPC">
                         </div>
 
-                        <div class="form-group">
+                        <div class="col-md-6 mb-3">
                             <label class="label">Clinic Telephone Number</label>
-                            <input type="tel" class="input" value="BPC">
+                            <input type="tel" class="form-control" value="BPC">
                         </div>
                     </div>
+
 
                     <button class="button-update-clinic m-auto">Update Clinic</button>
                 </div>
 
                 <!-- Users custom-card -->
-                <div class="custom-card mb-1">
+                <div class="custom-card">
                     <div class="button-row">
                         <div class="card-title mb-3 subheading-form" style="margin-bottom: 0;">Users</div>
                         <button type="button" class="add-employe" data-bs-toggle="modal" data-bs-target="#addUserModal">
@@ -205,54 +213,60 @@
 
             <div class="right-column">
                 <!-- Plan-Specific Details Card -->
-                <div class="custom-card custom-pb-5 flex-wrap-nowrap">
+                <div class="custom-card custom-pb-5">
                     <div class="card-title mb-3 subheading-form">Plan-Specific Details</div>
-                    <div class="form-row col-md-12 col-sm-12 col-lg-12">
 
-                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                    <!-- Row 1 -->
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
                             <label class="label">HaloGUID</label>
-                            <input type="text" class="input" value="65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
+                            <input type="text" class="form-control" value="65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
                         </div>
 
-                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                        <div class="col-md-6 mb-3">
                             <label class="label">Input Path</label>
-                            <input type="text" class="input" value="\\65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
+                            <input type="text" class="form-control" value="\\65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
                         </div>
                     </div>
-                    <div class="form-row col-md-12 col-sm-12 col-lg-12">
 
-                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                    <!-- Row 2 -->
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
                             <label class="label">Output Path</label>
-                            <input type="text" class="input" value="\\65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
+                            <input type="text" class="form-control" value="\\65a4f65a-465asd4f65a1sd6f-54asd4f654as6df">
                         </div>
 
-                        <div class="form-groupcol-lg-6 col-md-6 col-sm-6">
+                        <div class="col-md-6 mb-3">
                             <label class="label">HL7 Path</label>
-                            <input type="text" class="input" value="\\65a4f65a\\465asd4f65a1sd6f\54asd4f654as6df">
+                            <input type="text" class="form-control"
+                                value="\\65a4f65a\\465asd4f65a1sd6f\54asd4f654as6df">
                         </div>
                     </div>
 
-                    <div class="form-row col-md-12 col-12 justify-content-between">
-                        <div class="form-field col-12 col-sm-6 col-md-4">
+                    <!-- Row 3 : 3 Columns -->
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
                             <label class="label">Principle Doctor First Name</label>
-                            <input type="text" class="input" value="Jasendra">
+                            <input type="text" class="form-control" value="Jasendra">
                         </div>
-                        <div class="form-field col-12 col-sm-6 col-md-4">
+
+                        <div class="col-md-4 mb-3">
                             <label class="label">Principle Doctor Last Name</label>
-                            <input type="text" class="input" value="Aranbepoola">
+                            <input type="text" class="form-control" value="Aranbepoola">
                         </div>
-                        <div class="form-group col-12 col-sm-6 col-md-3">
+
+                        <div class="col-md-4 mb-3">
                             <label class="label">Max Pages</label>
-                            <input type="number" class="input" value="3">
+                            <input type="number" class="form-control" value="3">
                         </div>
                     </div>
 
-
-                    <div class="button-row-end">
+                    <div class="d-flex justify-content-end gap-2 mt-4    pb-3">
                         <button class="update-details-btn flex-3">Update Details</button>
                         <button class="button-cancel">Cancel</button>
                     </div>
                 </div>
+
 
                 <!-- Semi-Processing Card -->
                 <div class="custom-card mb-1 custom_padding_enable_card">
@@ -368,7 +382,7 @@
 <script>
     $(document).ready(function () {
         // Color theme configurations
-    
+
         // Function to update CSS custom properties
         function updateTheme(theme) {
             const root = document.documentElement;
@@ -384,7 +398,7 @@
         $('.color-circle').on('click', function () {
             const color = $(this).data('color');
             localStorage.setItem('selected_color', color);
-            updateTheme(color);
+            // updateTheme(color);
 
             // Add visual feedback
             $('.color-circle').removeClass('active');
@@ -485,6 +499,6 @@
         //     });
         // });
         // Initialize with violet theme
-        updateTheme('violet');
+        // updateTheme('violet');
     });
 </script>
