@@ -208,7 +208,7 @@ a {
   transform: none;
   height: calc(100vh - 100px);
   position: fixed;
-  top: 98px;
+  top: 85px;
   left: 0;
   padding: 6px;
   white-space: nowrap;
@@ -288,7 +288,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 32px; */
+  margin-bottom: 20px;
   width: 45px;
   margin-top: 5px;
 }
