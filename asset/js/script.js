@@ -256,4 +256,16 @@ $(document).ready(function () {
             }
         });
     });
+
+    // notification panel show hide 
+    $("#js-notification-btn").on("click", function (e) {
+        e.stopPropagation();
+        $(".notification_panel").toggleClass("d-none");
+    });
+    $(document).on("click", function (e) {
+        if (!$(e.target).closest(".notification_panel").length &&
+            !$(e.target).closest("#js-notification-btn").length) {
+            $(".notification_panel").addClass("d-none");
+        }
+    });
 });

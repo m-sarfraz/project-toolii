@@ -292,7 +292,16 @@ a {
   width: 45px;
   margin-top: 5px;
 }
-
+.notification_panel {
+  max-width: 380px !important;
+  position: absolute !important;
+  left: 86px;
+  width: 400px;
+  bottom: 0px;
+  height: 350px !important;
+  z-index: 999;
+  background: white;
+}
 .logout-icon {
   object-fit: contain;
   width: 100%;
@@ -1061,9 +1070,11 @@ a {
 
 .action-button.primary {
   color: white;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       var(--Light-Purple, #9e87fe),
-      var(--Light-Purple, #9e87fe)),
+      var(--Light-Purple, #9e87fe)
+    ),
     linear-gradient(90deg, #a681f0 0%, #74faf3 100%);
 }
 
@@ -1184,7 +1195,6 @@ a {
 .vertical-button:nth-child(7) {
   /* background: linear-gradient(136.1deg, #7acbe6 3.89%, #80a6e4 94.55%); */
   background: #a495ff;
-
 }
 
 .vertical-button:nth-child(2),
@@ -1262,5 +1272,10 @@ a {
 
   .list-item {
     padding: 16px 20px;
+  }
+}
+@media (max-width: 450px) {
+  .notification_panel {
+    width: 250px;
   }
 }

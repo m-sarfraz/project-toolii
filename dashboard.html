@@ -69,18 +69,58 @@
 
             <!-- Bottom Menu -->
             <div class="d-flex flex-column gap-3">
-                 <a class="menu-item d-flex align-items-center" href="">
-                        <img src="asset/images/bell-final.svg"  alt="NOTIFICATIONS">
-                        <span>Notifications</span>
-                    </a>
+                <a class="menu-item d-flex align-items-center" href="#" type="button" id="js-notification-btn">
+                    <img src="asset/images/bell-final.svg" alt="NOTIFICATIONS">
+                    <span>Notifications</span>
+                </a>
+                <div class="card shadow-sm notification_panel d-none">
+                    <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                        <span class="fw-semibold">Notifications</span>
+                        <a href="#" class="small text-decoration-none">Mark all as read</a>
+                    </div>
 
+                    <div class="list-group list-group-flush">
+                        <!-- Notification item -->
+                        <div class="list-group-item d-flex">
+                            <img src="asset/images/index_mascot.svg" class="rounded-3 me-3" width="44" height="44">
+
+                            <div class="flex-grow-1">
+                                <p class="mb-1 small">
+                                    A reminder your subscription is due to renew on Nov 25.
+                                </p>
+                                <span class="text-muted small">9:02 PM, Nov 22</span>
+                            </div>
+
+                            <span class="ms-3 mt-2">
+                                <span class="badge bg-danger rounded-circle p-2"></span>
+                            </span>
+                        </div>
+
+                        <!-- Notification item -->
+                        <div class="list-group-item d-flex">
+                            <img src="asset/images/index_mascot.svg" class="rounded-3 me-3" width="44" height="44">
+
+                            <div class="flex-grow-1">
+                                <p class="mb-1 small">
+                                    <span class="fw-semibold">SF</span> visited toolii.
+                                </p>
+                                <span class="text-muted small">7:43 PM, Jul 26</span>
+                            </div>
+
+                            <span class="ms-3 mt-2">
+                                <span class="badge bg-success rounded-circle p-2"></span>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
                 <a class="menu-item d-flex align-items-center" href="security.html">
                     <img src="asset/images/settings.svg" alt="Settings">
                     <span>Settings</span>
                 </a>
 
                 <div class="menu-item logout d-flex align-items-center cursor-pointer">
-                    <a href="profile.html" class="d-flex flex-column" style="text-decoration: none;">
+                    <a href="profile.html" class="d-flex flex-column align-items-center">
                         <img src="asset/images/logout.svg" alt="Logout">
                         <span>Logout</span>
                     </a>
@@ -547,7 +587,7 @@
                                 <div class="live-feed-cell">
                                     <div class="live-feed-cell-text">2025-10-14</div>
                                 </div>
-                                  <div class="live-feed-cell">
+                                <div class="live-feed-cell">
                                     <div class="live-feed-cell-text">2025-10-14</div>
                                 </div>
                             </div>
@@ -588,7 +628,7 @@
                                         <div class="status-text">Completed</div>
                                     </div>
                                 </div>
-                                  <div class="status-cell">
+                                <div class="status-cell">
                                     <div class="status-badge">
                                         <img src="./asset/images/green-dot.svg" class="status-icon" alt="Completed" />
                                         <div class="status-text">Completed</div>
@@ -644,7 +684,7 @@
                                 <div class="users-cell">
                                     <div class="users-cell-text">#78052</div>
                                 </div>
-                               
+
 
                             </div>
 
@@ -663,7 +703,7 @@
                                 <div class="users-cell">
                                     <div class="users-cell-text">btndjfoe@myclinic.com.au</div>
                                 </div>
-                               
+
                             </div>
 
                             <div class="users-column">
@@ -681,7 +721,7 @@
                                 <div class="users-cell">
                                     <div class="users-cell-text">Allocator</div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
