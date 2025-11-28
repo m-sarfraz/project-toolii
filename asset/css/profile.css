@@ -12,9 +12,11 @@
     width: 100%;
   }
 }
+
 .delete-account-btn {
   background-color: #ff3b30 !important;
 }
+
 .profile-container {
   width: 100%;
   background-color: #ffffff;
@@ -299,11 +301,9 @@
   gap: 28px;
   margin: 0 auto;
   width: auto;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
-    ),
+      rgba(255, 255, 255, 0.9)),
     linear-gradient(312.95deg, #ffe8f8 0%, #fdeef8 100.11%);
   box-shadow: 0px 0px 24px #ac92db;
   border-radius: 48px;
@@ -416,9 +416,11 @@
   min-height: fit-content;
   height: 545px;
 }
+
 .btn-save-password {
   margin: 1em 0px !important;
 }
+
 /* Section titles */
 .section-title {
   font-family: "Inter";
@@ -549,12 +551,16 @@
 
 .btn-save,
 .btn-save-password {
-  width: 100%;
+  /* width: 100%; */
   margin-top: 0;
+  width: fit-content;
+  padding: 16px 25px;
+  margin-left: auto !important;
 }
 
 .btn-enable-2fa {
-  width: 100%;
+  width: fit-content;
+  padding: 16px 25px !important;
   margin-top: 12px;
   padding: 3px;
 }
@@ -825,6 +831,7 @@ button:not(:disabled) {
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
+
   .form-input,
   .btn-primary,
   .btn-danger {
