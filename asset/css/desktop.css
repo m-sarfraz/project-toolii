@@ -1156,7 +1156,8 @@ a {
   gap: 8px;
   width: 72px;
   height: 72px;
-  background: linear-gradient(136.1deg, #7acbe6 3.89%, #80a6e4 94.55%);
+  /* background: linear-gradient(136.1deg, #7acbe6 3.89%, #80a6e4 94.55%); */
+  background: #a495ff;
   border-radius: 10px;
   align-self: stretch;
   font-family: "Inter";
@@ -1181,13 +1182,16 @@ a {
 .vertical-button:nth-child(3),
 .vertical-button:nth-child(5),
 .vertical-button:nth-child(7) {
-  background: linear-gradient(136.1deg, #7acbe6 3.89%, #80a6e4 94.55%);
+  /* background: linear-gradient(136.1deg, #7acbe6 3.89%, #80a6e4 94.55%); */
+  background: #a495ff;
+
 }
 
 .vertical-button:nth-child(2),
 .vertical-button:nth-child(4),
 .vertical-button:nth-child(6) {
-  background: linear-gradient(136.85deg, #90dddf -3.02%, #84bae4 93.95%);
+  /* background: linear-gradient(136.85deg, #90dddf -3.02%, #84bae4 93.95%); */
+  background: #a495ff;
 }
 
 /* Responsive Design */
