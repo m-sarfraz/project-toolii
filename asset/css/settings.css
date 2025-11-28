@@ -116,17 +116,16 @@ body.modal-open-disable-scale {
   justify-content: end;
 }
 
-/* .modal.show .modal-dialog {
+.modal-dialog {
+  max-width: 50% !important;
+  margin: 1.75rem auto !important;
+}
+
+.modal.show .modal-dialog {
   min-width: 50% !important;
   max-width: 50% !important;
-  background: #fef8ff;
-  box-shadow: 0px 4px 20px #ccbdff;
-  border-radius: 20px;
-  min-height: fit-content;
   margin: 1.75rem auto !important;
-  display: flex;
-  align-items: center;
-} */
+}
 
 .modal-content {
   position: relative;
@@ -138,10 +137,15 @@ body.modal-open-disable-scale {
   border: none;
   border-radius: 20px;
   box-shadow: 0px 4px 20px #ccbdff;
+  max-height: 90vh;
+  overflow: hidden;
 }
 
 .modal-body {
   padding: 2em !important;
+  overflow-y: auto;
+  max-height: calc(90vh - 120px);
+  flex: 1;
 }
 
 .color-circle {
@@ -492,10 +496,6 @@ label {
 
 .button-outline:hover {
   background-color: var(--gray-50);
-}
-
-.update-details-btn {
-  /* flex: 3; */
 }
 
 .update-clinic-btn,
@@ -874,11 +874,24 @@ label {
     max-width: 100%;
   }
 
-  /* .modal.show .modal-dialog {
+  .modal-dialog {
+    max-width: 95% !important;
+    margin: 1rem auto !important;
+  }
+
+  .modal.show .modal-dialog {
     min-width: 95% !important;
     max-width: 95% !important;
     margin: 1rem auto !important;
-  } */
+  }
+
+  .modal-content {
+    max-height: 95vh;
+  }
+
+  .modal-body {
+    max-height: calc(95vh - 120px);
+  }
 
   .header {
     gap: 1.5rem;
