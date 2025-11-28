@@ -41,10 +41,12 @@ body {
 button {
   font-family: Inter !important;
 }
+
 a {
   text-decoration: none !important;
   color: unset !important;
 }
+
 .main-container {
   flex: 1;
   padding: 8px;
@@ -241,6 +243,7 @@ a {
 .nav-item:first-child {
   margin-top: 0;
 }
+
 .settings-bg,
 .nav-icon {
   width: 32px;
@@ -1022,6 +1025,7 @@ a {
 .action-button {
   display: flex;
   overflow: hidden;
+  font-weight: bold;
   flex: 1;
   gap: 4px;
   justify-content: center;
@@ -1033,6 +1037,7 @@ a {
   font-size: 12px;
   line-height: 1.3;
 }
+
 .allocate-btn {
   background: linear-gradient(90deg, #a681f0 0%, #74faf3 100%), #9e87fe !important;
   box-shadow: 0px 1px 2px rgba(10, 13, 18, 0.05),
@@ -1041,6 +1046,7 @@ a {
   border-radius: 8px;
   border: unset !important;
 }
+
 .action-button.secondary {
   background: #d4c5fe;
 
@@ -1054,11 +1060,9 @@ a {
 
 .action-button.primary {
   color: white;
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       var(--Light-Purple, #9e87fe),
-      var(--Light-Purple, #9e87fe)
-    ),
+      var(--Light-Purple, #9e87fe)),
     linear-gradient(90deg, #a681f0 0%, #74faf3 100%);
 }
 
