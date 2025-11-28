@@ -189,7 +189,9 @@ a {
     left: 86px;
   }
 }
-
+.row {
+  margin-bottom: 1em;
+}
 /* Arrow styling */
 .toggle-sidebar .arrow {
   display: flex;
